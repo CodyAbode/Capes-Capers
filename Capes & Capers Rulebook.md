@@ -13,11 +13,11 @@ Most characters have a day job. These help them to maintain a cover, but can als
 ## Attributes
 Attributes are a representation of character's physical and mental abilities. Attribute modifiers are added to relevant rolls at the discretion of the Game Master.
 
-**Might (MIG)** measures physical strength.
-**Agility (AGI)** measures physical reflexes and deftness.
-**Endurance (END)** measures stamina and fortitude.
-**Intellect (INT)** measures intelligence and intuition.
-**Will (WIL)** measures resolve.
+**Might (MIG)** measures physical strength.  
+**Agility (AGI)** measures physical reflexes and deftness.  
+**Endurance (END)** measures stamina and fortitude.  
+**Intellect (INT)** measures intelligence and intuition.  
+**Will (WIL)** measures resolve.  
 
 When creating a character, use the following array to set their attribute values: 14, 13, 12, 11, 10.
 
@@ -34,11 +34,11 @@ When text uses the full name of an ability, such as "Might", it is referring to 
 | 12-13 | +1 | 28-29 | +9 |
 | 14-15 | +2 | 30 | +10 |
 
-**Hit Points (HP)** are a measure of your current fortitude. When your HP hits 0, you are knocked unconscious. Your hit point maximum starts equal to your END. Every time you gain a level, increase it by half your END score (rounded up).
+**Hit Points (HP)** are a measure of your current fortitude. When your HP hits 0, you are knocked unconscious. Your hit point maximum starts equal to your Endurance. Every time you gain a level, increase it by half your Endurance (rounded up).
 
-**Power Points (PP)** are a measure of your current stamina, and are spent on powers. Your Power Point maximum starts equal to your END score. Every time you gain a level, increase it by your END Modifier.
+**Power Points (PP)** are a measure of your current stamina, and are spent on powers. Your Power Point maximum starts equal to your Endurance. Every time you gain a level, increase it by your END.
 
-**Speed** is a measurement of how far in Units you can move per turn. It is equal to 5 plus your character's AGI modifier.
+**Speed** is a measurement of how far in Units you can move per turn. It is equal to 5 plus your character's AGI.
 
 **Stress** is an indicator of the pressure your character is experiencing. It is explained further in the Downtime section. It starts at 0.
 
@@ -109,7 +109,7 @@ Basic powers that all characters are capable of.
     - **Action Type:** Passive
     - **Power Point Cost:** -
     - **Requirements:** None
-    - **Description:** One of your attributes are enhanced even further, granting you +2 to that attribute score.
+    - **Description:** One of your attributes are enhanced even further, granting you +2 to that attribute value.
 - **Flight**
     - **Action Type:** Quick Action (Activation)
     - **Power Point Cost:** 2
@@ -421,6 +421,9 @@ If your Stress points exceed 3, you take on increasingly worse effects as indica
 ### Using your powers
 You may use your powers during downtime. You are not restricted to your specific powers during this phase. For example, you could use your Electricity Control power set to hot-wire a car. Furthermore, you do not need to spend PP to do so.
 
+### Collaboration
+During a downtime round, you may collaborate with other members of your Super Team on a track. When you do so, roll individually as normal, but you use sum of your modifiers for the roll. Additionally, you may take Stress points to assist the other members involved.
+
 # Missions
 ...
 
@@ -438,7 +441,7 @@ During your turn, you may agree upon a Team Maneuver which require Actions, Quic
 This maneuver requires you to have and use a power that can knock an enemy into a team member. That team member must spend their reaction. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
 
 ### Fastball Special
-This maneuver requires you to be adjacent to a team member. You use your action to attempt throw the team member, who must use their reaction. Might a MIG roll, the threshold to meet is the inverse of their Agility score. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
+This maneuver requires you to be adjacent to a team member. You use your action to attempt throw the team member, who must use their reaction. Might a MIG roll, the threshold to meet is the inverse of their Agility value. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
 
 # Unorganized Notes
 - Always round up, unless otherwise stated.
