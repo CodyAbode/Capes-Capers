@@ -5,10 +5,10 @@
 Characters are created by coming up with identities, selecting attributes, an origin, and power sets.
 
 ## Identities
-While it is not a requirement, your character will likely maintain separate mundane and superpowered identities. These connection of these identities are a often a closely guarded secret, in order to protect their family, friends, and themselves. Consider these details, including their Code Name, Real Name, either now or while you continue creating the rest of your character.
+Your character will have separate mundane and superpowered identities. These connection of these identities are a closely guarded secret, in order to protect their family, friends, and themselves. Consider these details, including their Code Name, Real Name, either now or while you continue creating the rest of your character.
 
-## Occupation
-Most characters have a day job. These help them to maintain a cover, but can also provide resources, leads, and allies to assist with their superpowered work. Ask your Game Master about what occupations would be available to your character. Examples include reporter, private investigator, student, and scientist.
+### Occupation
+An important part of your character's identity is their day job. These help them to maintain a cover, but can also provide resources, leads, and allies to assist with their superpowered work. Ask your Game Master about what occupations would be available to your character. Examples include reporter, private investigator, student, and scientist.
 
 ## Attributes
 Attributes are a representation of character's physical and mental abilities. Attribute modifiers are added to relevant rolls at the discretion of the Game Master.
@@ -45,7 +45,7 @@ When text uses the full name of an ability, such as "Might", it is referring to 
 **Power Level** is your current level, it starts at 1 and increases when decided by your Game Master.
 
 ## Origin
-Origins are the source of your character's powers. They may have an effect on how others perceive you. You may be able to get advantage on rolls for things relating to your origin.
+Origins are the source of your character's powers. They may have an effect on how others perceive you. You may be able to get advantage on rolls for things relating to your origin, such as hot-wiring a car with the Technology background.
 
 ### Mythic
 Your powers come from the fact that you are a creature or person of legend. You may be the kin or champion of a deity, or even a deity yourself. You may be exalted by some and condemned by others for your status.
@@ -101,7 +101,9 @@ Basic powers that all characters are capable of.
     - **Requirements:** None
     - **Description:** Roll a number of d4 equal to half your PL. You regain that amount of PP.
 - **Grapple**
+    - ...
 - **Throw**
+    - ...
 
 ### Auxiliary Powers
 ...
@@ -368,7 +370,7 @@ You possess phenomenal strength and are able exert great physical force. The pri
 Capers is played in two repeating phases: Downtime, and Missions. ...
 
 ## Downtime
-During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences.
+During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits narratively, but it is typically a few days. Tracks do not neccesarily have to be rolled chronologically.
 
 When you enter downtime, you recover all spent resources such as HP and PP.
 
@@ -448,3 +450,10 @@ This maneuver requires you to be adjacent to a team member. You use your action 
 - Advantage Dice and Penalty Dice are rolled in addtion to a normal d20 roll and your keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
 - Knocking a character causes them to move in a specified direction, including up or down. Characters that are knocked up take applicable falling damage. Characters that are knock into or through a wall or ceiling take an extra 1d6 damage. If they are knocked into another character, both characters take 1d6 damage.
 - Training Dice (TD) can be expended to get an Advantage Die on a Power Roll or to increase a Power Modifier by 1. Multiple TD can be expended on a single power. These are gained by training during Downtime, but may also be awarded by your GM.
+- Character sizes:
+    - Small: +2 Agility, -2 total from Might and/or Endurance
+    - Large: +2 total to Might and/or Endurance, -2 Agility
+- TODO Powers:
+    - Water Control
+    - Plant Control
+    - Shapeshifting
