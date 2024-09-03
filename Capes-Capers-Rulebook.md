@@ -460,3 +460,4 @@ This maneuver requires you to be adjacent to a team member. You use your action 
 - Level cap: 12
     - Characters get auxillary powers at 1, 4, 8, 12
 - Each power set will have 20 powers
+- Powers rolls 5 over threshold are "great hits", may have additional effect
