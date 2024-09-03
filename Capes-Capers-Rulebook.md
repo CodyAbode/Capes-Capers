@@ -21,7 +21,7 @@ Attributes are a representation of character's physical and mental abilities. At
 
 When creating a character, use the following array to set their attribute values: 14, 13, 12, 11, 10.
 
-When text uses the full name of an ability, such as "Might", it is referring to the value of the attribute. When the shorthand, such as "MIG" is used, it is referring to the modifier. The modifier is calculated by subtracting 10 from the attribute value and then dividing the total by 2, while rounding down.
+When text uses the full name of an ability, such as "Might", it is referring to the value of the attribute (e.g. 14). When the shorthand, such as "MIG" is used, it is referring to the modifier (e.g. 2). The modifier is calculated by subtracting 10 from the attribute value and then dividing the total by 2, while rounding down.
 
 | Value | Modifier | Value | Modifier |
 | --- | --- | --- | --- |
@@ -142,9 +142,9 @@ Basic powers that all characters are capable of.
 ...
 
 #### Claws
-You use claws, talons or blades that protrude from your fingers or in-between your knuckles to strike with deadly efficiency. The primary attribute for this set is Agility.
+You have talons, blades or spines that protrude from your fingers, in-between your knuckles, or all over your body. The primary attribute for this set is Agility.
 - **Savagery**
-    - **Action Type:** Passive
+    - **Action Type:** Passive 
     - **Power Point Cost:** -
     - **Requirements:** None
     - **Description:** You add your attribute modifier to damage rolls an additional time.
@@ -332,7 +332,7 @@ You are able to commit great feats of speed. The primary attribute for this set 
     - **Power Point Cost:** 2*
     - **Requirements:** None
     - **Description:** You swiftly strike an enemy multiple times, dealing (2PMd4 + AGI) PHS.
-- **Burnout**
+- **Overclock**
     - **Action Type:** Quick Action
     - **Power Point Cost:** 2
     - **Requirements:** PL2
@@ -457,3 +457,6 @@ This maneuver requires you to be adjacent to a team member. You use your action 
     - Water Control
     - Plant Control
     - Shapeshifting
+- Level cap: 12
+    - Characters get auxillary powers at 1, 4, 8, 12
+- Each power set will have 20 powers
