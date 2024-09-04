@@ -6,7 +6,7 @@ You play a superpowered character aligned with your fellow player's characters a
 # Downtime
 During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits narratively, but it is typically a few days. Tracks do not neccesarily have to be rolled chronologically.
 
-When you enter downtime, you recover all spent resources such as HP and PP.
+When you enter downtime, you recover all resources spent during missions such as HP and PP.
 
 ## Tracks
 There are six Tracks; Investigation, Occupation, Relationships, Rest, Training, and Welfare. Each track has an attribute associated with it, but your GM may call for a different attribute depending on the situation. Generally, you may only roll on each track once per Downtime phase.
@@ -24,7 +24,7 @@ This track functions similarly to the Occupation track, but has to do with maint
 Rest and relaxation is the best way to deal with stress. Resting well removes a Stress point, very well removes 2, and extremely well removes 3. Poor rest does not have any consequences, but building up Stress can. This track is typically rolled with END.
 
 ## Training
-Superpowers need to be honed to be as effective as possible. Performing well provides you a Training Die, while performing extremely well provides 2. This track is rolled with an attribute associated with one of your power sets.
+Superpowers need to be honed to be as effective as possible. Performing well provides you a Training Die (TD), while performing extremely well provides 2. This track is rolled with an attribute associated with one of your power sets.
 
 ## Welfare
 This track concerns minor heroics such as getting a cat down from a tree or following up on the citizen you saved from a burning building. Performing well can earn you fame, which may earn you the help of new allies. Performing poorly may cause some to refuse to help you. This track is rolled with an attribute associated with one of your power sets.
@@ -61,14 +61,28 @@ You may use your powers during downtime. You are not restricted to your specific
 During a downtime round, you may collaborate with other members of your Super Team on a track. When you do so, roll individually as normal, but you use sum of your modifiers for the roll. Additionally, you may take Stress points to assist the other members involved.
 
 # Missions
-...
+During a mission you are attempting to accomplish a task. You may act freely until your Game Master calls for you to enter initiative. During initiative, you, your team members, non-player characters (NPCs), and events take turns acting.
+
+To enter initiative, roll a d20, and add your AGI. Use your Agility to resolve ties. This determines the turn order.
+
+At the start of your turn, you get an Action, Quick Action, Reaction and Movement. You can use your reaction after turn, but cannot use it again until the start of your next turn.
 
 ## Power Rolls
-Using a power that targets enemies usually require a Power Roll. These are performed by rolling a d20 and adding the modifier of the attribute associated with the power. You can get Advantage on a Power Roll by expending a Training Die. The target of the power may Resist the power using their attribute values. Powers that deal damage are resisted based on the type of damage they deal, as listed below. Otherwise, the power will state which attribute(s) can be used for Resisting.
+Using a power that targets enemies usually require a Power Roll. These are performed by rolling a d20 and add the modifier of the attribute associated with the power. The target of the power may resist the power using their attribute values. You must meet or beat their resistance in order for your power to affect them.
+
+Powers that deal damage are resisted based on the type of damage they deal, as listed below. Otherwise, the power will state which attribute(s) can be used for Resisting.
 
 - Physical (PHS) can be resisted with AGI or END.
 - Energy (ENR) can be resisted with AGI or WIL.
 - Mental (MNT) can be resisted with INT or WIL.
+
+### Advantages and Penalties
+Advantage Dice and Penalty Dice are rolled in addtion to a normal d20 roll and you keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
+
+Training Dice can be expended to get an Advantage Die on a Power Roll or to increase a Power Modifier by 1. Multiple TD can be expended on a single power. These are gained by training during Downtime, but may also be awarded by your GM.
+
+### Additional Effects
+When you make a power roll, if you beat the resistance of an affected character by 5, it may have an additional effect, depending on the power. If you roll a 20 on your d20 while making a power roll, the power can not be resisted, additional effects are applied, and the power multiplier is doubled, if applicable.
 
 ## Team Maneuvers
 During your turn, you may agree upon a Team Maneuver which require Actions, Quick Actions, and/or Reactions from other members of your Super Team. These actions are used regardless of whether the maneuver succeeds or fails. As Actions and Quick Actions can only be used during your turn, a maneuver may take more than one turn to complete.
@@ -94,8 +108,8 @@ Falling characters take 1d6 PHS damage for at the end of the fall for every 2 un
 - **Stunned:** You are unable to act.
 - **Unconcious:** You are unable to act. This effect ends if you gain more than 0 HP. If your HP goes below the negative value of your HP maximum, you die.
 
-# Characters
-Characters are created by coming up with identities, selecting attributes, an origin, and power sets.
+# Player Characters
+Characters are created by coming up with identities, then selecting attributes, an origin, and power sets. See the following Powers section when you're ready to select your powers.
 
 ## Identities
 Your character will have separate mundane and superpowered identities. These connection of these identities are a closely guarded secret, in order to protect their family, friends, and themselves. Consider these details, including their Code Name, Real Name, either now or while you continue creating the rest of your character.
@@ -135,7 +149,7 @@ When text uses the full name of an ability, such as "Might", it is referring to 
 
 **Stress** is an indicator of the pressure your character is experiencing. It is explained further in the Downtime section. It starts at 0.
 
-**Power Level** is your current level, it starts at 1 and increases when decided by your Game Master.
+**Power Level** is your current level, it starts at 1 and increases when decided by your Game Master, up to 12.
 
 ## Origin
 Origins are the source of your character's powers. They may have an effect on how others perceive you. You may be able to get advantage on rolls for things relating to your origin, such as hot-wiring a car with the Technology background.
@@ -165,13 +179,15 @@ You receive your powers from a magical source. These abilities might come from a
 
 Attribute bonus: +2 Will
 
-## Powers
+# Powers
 Powers are organized as Power Sets. All characters get the powers from the Inherent Set.
 
-When creating a new character, select two Power Sets, then select any two powers from those sets that your character meets the requirements for. Additionally, you may choose one of the Auxiliary Powers. Each time you level up, you gain another power of your choice from one of your Power Sets.
+When creating a new character, select two Power Sets, then select any two powers from those sets that your character meets the requirements for. Additionally, you may choose one of the Auxiliary Powers.
 
-### Inherent Powers
-Basic powers that all characters are capable of.
+Each time you level up, you gain two more powers of your choice from your Power Sets. You may get another Auxiliary Power at levels 4, 8, and 12.
+
+## Inherent Powers
+Inherent Powers are basic powers that all characters possess.
 - **Strike**
     - **Action Type:** Action
     - **Power Point Cost:** 0
@@ -198,13 +214,13 @@ Basic powers that all characters are capable of.
 - **Throw**
     - ...
 
-### Auxiliary Powers
-...
+## Auxiliary Powers
+Auxiliary Powers are supplemental powers available to all characters at certain power levels.
 - **Enhancement**
     - **Action Type:** Passive
     - **Power Point Cost:** -
     - **Requirements:** None
-    - **Description:** One of your attributes are enhanced even further, granting you +2 to that attribute value.
+    - **Description:** One of your attributes are enhanced, granting you +2 to that attribute value. This power can be gained again for other attributes.
 - **Flight**
     - **Action Type:** Quick Action (Activation)
     - **Power Point Cost:** 2
@@ -230,11 +246,21 @@ Basic powers that all characters are capable of.
     - **Power Point Cost:** -
     - **Requirements:** None
     - **Description:** You can move up solid vertical surfaces and move while clinging to the underside of a surface as if they were the ground.
+- **Greater Enhancement**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** PL4, Enhancement
+    - **Description:** One of your enhanced attributes are advanced even further, granting you an additional +2 to that attribute value.
+- **Tertiary Power Set**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** PL4
+    - **Description:** You gain a third Power Set and may immediately gain one power from it for which you meet the requirements. When you level up, you may gain powers from the set as normal.
 
-### Power Sets
-...
+## Power Sets
+Power Sets are the general category of your character's superpowers and contain the specific powers you can use on missions. Each set has 20 powers.
 
-#### Claws
+### Claws
 You have talons, blades or spines that protrude from your fingers, in-between your knuckles, or all over your body. The primary attribute for this set is Agility.
 - **Savagery**
     - **Action Type:** Passive 
@@ -257,7 +283,7 @@ You have talons, blades or spines that protrude from your fingers, in-between yo
     - **Requirements:** PL3
     - **Description:** You slash at all adjacent characters, dealing (PMd8 + AGI) PHS damage.
 
-#### Electricity Control
+### Electricity Control
 Electricity leaps and sparks at your command. The primary attribute for this set is Will.
 - **Static Bolt**
     - **Action Type:** Action
@@ -280,7 +306,7 @@ Electricity leaps and sparks at your command. The primary attribute for this set
     - **Requirements:** PL3
     - **Description:** You shock an enemy within 5U, dealing (PMd6 + WIL) ENR damage. If another enemy is within 2U, repeat the power against them. This can happen a number of times equal to PM.
 
-#### Fire Control
+### Fire Control
 You can control the essence of fire. The primary attribute for this set is Will.
 - **Flare**
     - **Action Type:** Action
@@ -303,7 +329,7 @@ You can control the essence of fire. The primary attribute for this set is Will.
     - **Requirements:** PL3
     - **Description:** You send out a wave of fire in a 3U cone, dealing (PMd6 + WIL) ENR to each enemy within, and cause them to burn, unless resisted.
 
-#### Force Control
+### Force Control
 You have the ability to manipulate energy to create physical forces. The primary attribute for this set is Will.
 - **Force Field**
     - **Action Type:** Reaction
@@ -326,7 +352,7 @@ You have the ability to manipulate energy to create physical forces. The primary
     - **Requirements:** PL3
     - **Description:** You create a force field around an enemy. They cannot move or target characters outside the force field, nor be targeted themselves. The force field uses your WIL to resist and dissapates upon taking any damage.
 
-#### Gadgetry
+### Gadgetry
 You have equipment that you have constructed or acquired to gain tactical advantages. The primary attribute for this set is Intellect.
 - **Grappling Hook**
     - **Action Type:** Reaction
@@ -349,7 +375,7 @@ You have equipment that you have constructed or acquired to gain tactical advant
     - **Requirements:** PL3
     - **Description:** You shoot a taser dart at an enemy up to 5U away, dealing (1d4 + INT) ENR damage, and stunning them until the end of their turn, unless resisted.
 
-#### Invisibility
+### Invisibility
 You can bend light to conceal people and objects.
 - **Cloak**
     - **Action Type:** Quick Action (Activation)
@@ -367,7 +393,7 @@ You can bend light to conceal people and objects.
     - **Requirements:** PL3
     - **Description:** You grant the effects of Invisibility to another character.
 
-#### Mind Control
+### Mind Control
 You can read, manipulate, and influence other minds. The primary attribute for this set is Intellect.
 - **Mind Read**
     - **Action Type:** Quick Action
@@ -390,7 +416,7 @@ You can read, manipulate, and influence other minds. The primary attribute for t
     - **Requirements:** PL3
     - **Description:** You force an enemy within 10U to make an attack against a target of your choosing, unless resisted with INT or WIL.
 
-#### Shield Mastery
+### Shield Mastery
 You have mastered the use of a shield in battle for both defense and offense. The primary attribute for this set is Might.
 - **Deflection**
     - **Action Type:** Passive
@@ -413,7 +439,7 @@ You have mastered the use of a shield in battle for both defense and offense. Th
     - **Requirements:** PL3
     - **Description:** You throw your shield at an enemy, dealing (PMd6 + MIG) PHS damage.
 
-#### Super Speed
+### Super Speed
 You are able to commit great feats of speed. The primary attribute for this set is Agility.
 - **Alacrity**
     - **Action Type:** Passive
@@ -436,7 +462,7 @@ You are able to commit great feats of speed. The primary attribute for this set 
     - **Requirements:** PL3
     - **Description:** You gain another Action for this turn.
 
-#### Super Strength
+### Super Strength
 You possess phenomenal strength and are able exert great physical force. The primary attribute for this set is Might.
 - **Mighty**
     - **Action Type:** Passive
@@ -461,8 +487,6 @@ You possess phenomenal strength and are able exert great physical force. The pri
 
 # Unorganized Notes
 - Always round up, unless otherwise stated.
-- Advantage Dice and Penalty Dice are rolled in addtion to a normal d20 roll and your keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
-- Training Dice (TD) can be expended to get an Advantage Die on a Power Roll or to increase a Power Modifier by 1. Multiple TD can be expended on a single power. These are gained by training during Downtime, but may also be awarded by your GM.
 - Character sizes:
     - Small: +2 Agility, -2 total from Might and/or Endurance
     - Large: +2 total to Might and/or Endurance, -2 Agility
@@ -470,7 +494,3 @@ You possess phenomenal strength and are able exert great physical force. The pri
     - Water Control
     - Plant Control
     - Shapeshifting
-- Level cap: 12
-    - Characters get auxillary powers at 1, 4, 8, 12
-- Each power set will have 20 powers
-- Powers rolls 5 over threshold are "great hits", may have additional effect
