@@ -1,5 +1,98 @@
 # Overview
-**Capes & Capers** (C&C) is a Tabletop Role-playing Game (TTRPG) for telling stories featuring superpowered heroes and villains!
+**Capes & Capers** (C&C) is a Tabletop Role-playing Game (TTRPG) for telling stories featuring superpowered heroes, villians, and rogues!
+
+You play a superpowered character aligned with your fellow player's characters as a part of a Super Team. The game is played in two repeating phases: Downtime, and Missions.
+
+# Downtime
+During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits narratively, but it is typically a few days. Tracks do not neccesarily have to be rolled chronologically.
+
+When you enter downtime, you recover all spent resources such as HP and PP.
+
+## Tracks
+There are six Tracks; Investigation, Occupation, Relationships, Rest, Training, and Welfare. Each track has an attribute associated with it, but your GM may call for a different attribute depending on the situation. Generally, you may only roll on each track once per Downtime phase.
+
+## Investigation
+Your team may not know all the details pertaining to your next mission. Performing well may reveal information, or even provide you a benefit during the next mission. This track is typically rolled with INT.
+
+## Occupation
+Performing well may provide a benefit related to your occupation and situation. For example, doing well as a reporter may provide Advantage on your next Investigation roll. Repeated neglect or poor performance may cause you Stress, the loss of your job, or may even blow your cover. Roll an attribute associated with your occupation, such as WIL if you are a reporter, or INT if you are a student.
+
+## Relationships
+This track functions similarly to the Occupation track, but has to do with maintaining your relationships with friends, family, or significant others. This track is typically rolled with WIL.
+
+## Rest
+Rest and relaxation is the best way to deal with stress. Resting well removes a Stress point, very well removes 2, and extremely well removes 3. Poor rest does not have any consequences, but building up Stress can. This track is typically rolled with END.
+
+## Training
+Superpowers need to be honed to be as effective as possible. Performing well provides you a Training Die, while performing extremely well provides 2. This track is rolled with an attribute associated with one of your power sets.
+
+## Welfare
+This track concerns minor heroics such as getting a cat down from a tree or following up on the citizen you saved from a burning building. Performing well can earn you fame, which may earn you the help of new allies. Performing poorly may cause some to refuse to help you. This track is rolled with an attribute associated with one of your power sets.
+
+## Roll Threshold
+The threshold for the first track is 5 and increases by 5 for each additional track. Meeting the threshold is considered performing well on a track. Beating the threshold by 5 is considered very well, and beating it by 10 is considered extremely well. Similar considerations are made when performing poorly.
+
+| Result | Round 1 | Round 2 | Round 3 | Round 4 | Round 5 | Round 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Extremely Poor | -10 | -5 | 0 | 5 | 10 | 15 |
+| Very Poor | -5 | 0 | 5 | 10 | 15 | 20 |
+| Poor | 0 | 5 | 10 | 15 | 20 | 25 |
+| Well | 5 | 10 | 15 | 20 | 25 | 30 |
+| Very Well | 10 | 15 | 20 | 25 | 30 | 35 |
+| Extremely Well | 15 | 20 | 25 | 30 | 35 | 40 |
+
+## Stress
+If you do not reach your desired roll when rolling on a track, you can take a Stress point to roll again and take the higher roll. You may do this multiple times in a row for the same track.
+
+If your Stress points exceed 3, you take on increasingly worse effects as indicated on the table below.
+
+| Stress Level | Effect |
+| --- | --- |
+| 0-3  | No effect |
+| 4  | Your PP maximum is reduced by your stress points |
+| 5  | Your attributes are reduced by your stress points when resisting |
+| 6  | Your attributes are reduced by your stress points |
+| 7+  | Your HP maximum is reduced by half |
+
+## Using your powers
+You may use your powers during downtime. You are not restricted to your specific powers during this phase. For example, you could use your Electricity Control power set to hot-wire a car. Furthermore, you do not need to spend PP to do so.
+
+## Collaboration
+During a downtime round, you may collaborate with other members of your Super Team on a track. When you do so, roll individually as normal, but you use sum of your modifiers for the roll. Additionally, you may take Stress points to assist the other members involved.
+
+# Missions
+...
+
+## Power Rolls
+Using a power that targets enemies usually require a Power Roll. These are performed by rolling a d20 and adding the modifier of the attribute associated with the power. You can get Advantage on a Power Roll by expending a Training Die. The target of the power may Resist the power using their attribute values. Powers that deal damage are resisted based on the type of damage they deal, as listed below. Otherwise, the power will state which attribute(s) can be used for Resisting.
+
+- Physical (PHS) can be resisted with AGI or END.
+- Energy (ENR) can be resisted with AGI or WIL.
+- Mental (MNT) can be resisted with INT or WIL.
+
+## Team Maneuvers
+During your turn, you may agree upon a Team Maneuver which require Actions, Quick Actions, and/or Reactions from other members of your Super Team. These actions are used regardless of whether the maneuver succeeds or fails. As Actions and Quick Actions can only be used during your turn, a maneuver may take more than one turn to complete.
+
+### Tee Up
+This maneuver requires you to have and use a power that can knock an enemy into a team member. That team member must spend their reaction. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
+
+### Fastball Special
+This maneuver requires you to be adjacent to a team member. You use your action to attempt throw the team member, who must use their reaction. Make a MIG roll, the threshold to meet is the inverse of their Agility ((20 - Agility)). If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
+
+## Knocked Around
+Knocking a character causes them to move in a specified direction, including up or down. Characters that are knocked up take applicable falling damage. Characters that are knock into or through a wall or ceiling take an extra 1d6 damage. If they are knocked into another character, both characters take 1d6 damage.
+
+Falling characters take 1d6 PHS damage for at the end of the fall for every 2 units fallen.
+
+## Status Effects
+- **Blind:** You suffer a Penalty Die when making Power Rolls targeting other characters.
+- **Burning:** At the start of your turn, you take 1d4 ENR damage. You or another character can end this effect as an action.
+- **Grappled:** You are immobilized and are moved along with the character grappling you. As an action, you can attempt to escape by making a MIG or AGI roll that the grappling character can resist with Might.
+- **Immobilized:** Your speed is 0.
+- **Knocked Down:** You are slowed. You can end this effect as a quick action, but do not regain your lost movement.
+- **Slowed:** Your speed is reduced by half.
+- **Stunned:** You are unable to act.
+- **Unconcious:** You are unable to act. This effect ends if you gain more than 0 HP. If your HP goes below the negative value of your HP maximum, you die.
 
 # Characters
 Characters are created by coming up with identities, selecting attributes, an origin, and power sets.
@@ -131,7 +224,7 @@ Basic powers that all characters are capable of.
     - **Action Type:** Passive
     - **Power Point Cost:** -
     - **Requirements:** None
-    - **Description:** You have a superpowered sense, such as Echolocation or X-Ray Vision. This prevents you from suffering a Penalty Die when targetting a character you would not normally sense.
+    - **Description:** You have a superpowered sense, such as Echolocation or X-Ray Vision. This prevents you from suffering a Penalty Die when targeting a character you would not normally sense.
 - **Wall Climbing**
     - **Action Type:** Passive
     - **Power Point Cost:** -
@@ -366,89 +459,9 @@ You possess phenomenal strength and are able exert great physical force. The pri
     - **Requirements:** PL3
     - **Description:** You strike an enemy with an upward blow, dealing (PMd8 + MIG) PHS damage and knock them up (PM)U, unless resisted.
 
-## Play Phases
-Capers is played in two repeating phases: Downtime, and Missions. ...
-
-## Downtime
-During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits narratively, but it is typically a few days. Tracks do not neccesarily have to be rolled chronologically.
-
-When you enter downtime, you recover all spent resources such as HP and PP.
-
-### Tracks
-There are six Tracks; Investigation, Occupation, Relationships, Rest, Training, and Welfare. Each track has an attribute associated with it, but your GM may call for a different attribute depending on the situation. Generally, you may only roll on each track once per Downtime phase.
-
-### Investigation
-Your team may not know all the details pertaining to your next mission. Performing well may reveal information, or even provide you a benefit during the next mission. This track is typically rolled with INT.
-
-### Occupation
-Performing well may provide a benefit related to your occupation and situation. For example, doing well as a reporter may provide Advantage on your next Investigation roll. Repeated neglect or poor performance may cause you Stress, the loss of your job, or may even blow your cover. Roll an attribute associated with your occupation, such as WIL if you are a reporter, or INT if you are a student.
-
-### Relationships
-This track functions similarly to the Occupation track, but has to do with maintaining your relationships with friends, family, or significant others. This track is typically rolled with WIL.
-
-### Rest
-Rest and relaxation is the best way to deal with stress. Resting well removes a Stress point, very well removes 2, and extremely well removes 3. Poor rest does not have any consequences, but building up Stress can. This track is typically rolled with END.
-
-### Training
-Superpowers need to be honed to be as effective as possible. Performing well provides you a Training Die, while performing extremely well provides 2. This track is rolled with an attribute associated with one of your power sets.
-
-### Welfare
-This track concerns minor heroics such as getting a cat down from a tree or following up on the citizen you saved from a burning building. Performing well can earn you fame, which may earn you the help of new allies. Performing poorly may cause some to refuse to help you. This track is rolled with an attribute associated with one of your power sets.
-
-### Roll Threshold
-The threshold for the first track is 5 and increases by 5 for each additional track. Meeting the threshold is considered performing well on a track. Beating the threshold by 5 is considered very well, and beating it by 10 is considered extremely well. Similar considerations are made when performing poorly.
-
-| Result | Round 1 | Round 2 | Round 3 | Round 4 | Round 5 | Round 6 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Extremely Poor | -10 | -5 | 0 | 5 | 10 | 15 |
-| Very Poor | -5 | 0 | 5 | 10 | 15 | 20 |
-| Poor | 0 | 5 | 10 | 15 | 20 | 25 |
-| Well | 5 | 10 | 15 | 20 | 25 | 30 |
-| Very Well | 10 | 15 | 20 | 25 | 30 | 35 |
-| Extremely Well | 15 | 20 | 25 | 30 | 35 | 40 |
-
-### Stress
-If you do not reach your desired roll when rolling on a track, you can take a Stress point to roll again and take the higher roll. You may do this multiple times in a row for the same track.
-
-If your Stress points exceed 3, you take on increasingly worse effects as indicated on the table below.
-
-| Stress Level | Effect |
-| --- | --- |
-| 0-3  | No effect |
-| 4  | Your PP maximum is reduced by your stress points |
-| 5  | Your attributes are reduced by your stress points when resisting |
-| 6  | Your attributes are reduced by your stress points |
-| 7+  | Your HP maximum is reduced by half |
-
-### Using your powers
-You may use your powers during downtime. You are not restricted to your specific powers during this phase. For example, you could use your Electricity Control power set to hot-wire a car. Furthermore, you do not need to spend PP to do so.
-
-### Collaboration
-During a downtime round, you may collaborate with other members of your Super Team on a track. When you do so, roll individually as normal, but you use sum of your modifiers for the roll. Additionally, you may take Stress points to assist the other members involved.
-
-# Missions
-...
-
-## Power Rolls
-Using a power that targets enemies usually require a Power Roll. These are performed by rolling a d20 and adding the modifier of the attribute associated with the power. You can get Advantage on a Power Roll by expending a Training Die. The target of the power may Resist the power using their attribute values. Powers that deal damage are resisted based on the type of damage they deal, as listed below. Otherwise, the power will state which attribute(s) can be used for Resisting.
-
-- Physical (PHS) can be resisted with AGI or END.
-- Energy (ENR) can be resisted with AGI or WIL.
-- Mental (MNT) can be resisted with INT or WIL.
-
-## Team Maneuvers
-During your turn, you may agree upon a Team Maneuver which require Actions, Quick Actions, and/or Reactions from other members of your Super Team. These actions are used regardless of whether the maneuver succeeds or fails. As Actions and Quick Actions can only be used during your turn, a maneuver may take more than one turn to complete.
-
-### Tee Up
-This maneuver requires you to have and use a power that can knock an enemy into a team member. That team member must spend their reaction. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
-
-### Fastball Special
-This maneuver requires you to be adjacent to a team member. You use your action to attempt throw the team member, who must use their reaction. Might a MIG roll, the threshold to meet is the inverse of their Agility value. If successful, that team member may immediately use any appropriate power they have that would otherwise take a Action, Quick Actions, or Reaction, against that enemy.
-
 # Unorganized Notes
 - Always round up, unless otherwise stated.
 - Advantage Dice and Penalty Dice are rolled in addtion to a normal d20 roll and your keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
-- Knocking a character causes them to move in a specified direction, including up or down. Characters that are knocked up take applicable falling damage. Characters that are knock into or through a wall or ceiling take an extra 1d6 damage. If they are knocked into another character, both characters take 1d6 damage.
 - Training Dice (TD) can be expended to get an Advantage Die on a Power Roll or to increase a Power Modifier by 1. Multiple TD can be expended on a single power. These are gained by training during Downtime, but may also be awarded by your GM.
 - Character sizes:
     - Small: +2 Agility, -2 total from Might and/or Endurance

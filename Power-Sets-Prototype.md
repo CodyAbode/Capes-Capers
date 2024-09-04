@@ -30,26 +30,59 @@
     - 
     - 
 
-#### Claws
-- Melee and range tracks
+#### Archery
+- Offense and control tracks
 1.
-    - Savagery (double power mod)
-    - Slash (melee)
+    - Ranged Strike (range strike)
+    - Accurate (double pr mod)
 2.
-    - Lunge (melee, move)
+    - Power Shot (range)
+    - Blunt Arrow (range, knock back, down)
+3.
+    - Snap Shot (quick range)
+    - Net Arrow (range, grapple)
+4.
+    - Fistful of Arrows (area dmg)
+    - Oil Slick Arrow (area knock down)
+5.
+    - Fire Arrow (dmg, burn)
+    - Taser Arrow (range, stun)
+6.
+    - Explosive Arrow (area dmg, burn)
+    - EMP Arrow (area dmg)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
+#### Claws
+- adj and range tracks
+1.
+    - Slash (adj)
+    - Savagery (double power mod)
+2.
+    - Lunge (adj, move)
     - Fling (range)
 3.
-    - Rake (melee, -def)
+    - Rake (adj, -def)
     - Spinetrops (create dmg area)
 4.
-    - Spin Slash (multi melee)
-    - Pierce (range, multi)
+    - Spin Slash (multi adj)
+    - Piercing Spine (range, multi)
 5.
-    - Pounce (melee, knock down)
-    - Pin (range, grapple)
+    - Pounce (adj, knock down)
+    - Pinning Spine (range, grapple)
 6.
-    - Impale (melee, grapple)
-    - Burst (range, multi)
+    - Impale (adj, grapple)
+    - Spine Burst (range, multi)
 7.
     - 
     - 
@@ -66,19 +99,19 @@
 #### Electricity Control
 1.
     - Zap (range, -pp)
-    - Shock (melee, -pp)
+    - Shock (adj, -pp)
 2.
-    - Short Circuit (melee, double damage to electronics)
+    - Short Circuit (adj, double damage to electronics)
     - Dynamo (+end for movement)
 3.
     - Energize (+pp ally)
-    - Arc Ladder (melee, knock up)
+    - Arc Ladder (adj, knock up)
 4.
     - Charge Up (double power multiplier)
-    - Tase (melee, stun)
+    - Tase (adj, stun)
 5.
     - Chain Lightning (chain range)
-    - Inductor (Can melee as range)
+    - Inductor (Can adj as range)
 6.
     - Shock Wave (multi range)
     - Electric Fence (create dmg area)
@@ -97,20 +130,20 @@
 
 #### Fire Control
 1.
+    - Scorch (adj)
     - Flare (range)
-    - Scorch (melee)
 2.
+    - Ignite (adj burn)
     - Smolder (create smoke cover)
-    - Ignite (melee burn)
 3.
     - Flame Wave (multi range)
-    - Fire Within (+def vs enr)
+    - Warmth (passive +def vs enr)
 4.
-    - Immolate (self/near dmg)
     - Cauterize (heal self/ally)
+    - Immolate (self/near dmg)
 5.
-    - Stoke (Trigger burn dmg)
-    - Combust (multi melee, self dmg)
+    - Stoke (trigger burn dmg)
+    - Combust (multi adj, self dmg)
 6.
     - Fireball (multi range)
     - Flashfire (multi range, blind)
@@ -128,6 +161,7 @@
     - 
 
 #### Force Control
+- Force field and blast tracks
 1.
     - Force Field (self +def)
     - Force Bolt (range, knock back)
@@ -169,16 +203,48 @@
     - Glider (special movement)
 3.
     - Smoke bomb (create smoke cover)
-    - Bolas (range, tie up)
+    - Bolas (range, grapple)
 4.
-    - Flash Bomb (blind aoe)
+    - Flash Bomb (blind area)
     - Stim Dart (heal self/ally)
 5.
     - Cloaking Device (self)
     - Taser Dart (range, stun)
 6.
-    - EMP Blast (aoe)
+    - EMP Blast (area dmg)
     - Force Field Generator (self)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
+#### Ice Control
+1.
+    - Chill (action adj enr, slow)
+    - Icicle (action range enr, slow)
+2.
+    - 
+    - Ice Slick (area knock down)
+3.
+    - Ice Wall (action adj chain)
+    - Frost (action range enr, immob)
+4.
+    - Freeze (adj hold)
+    - Ice Armor (action active self +phs/enr def)
+5.
+    - 
+    - Ice Lance (action range enr, slow)
+6.
+    - Frost Wave (action cone enr, immob)
+    - Ice Block (react self, +def)
 7.
     - 
     - 
@@ -228,8 +294,8 @@
 #### Mind Control
 - Control and offense tracks
 1.
-    - Clarity (+int/wil def)
     - Mind Sense
+    - Clarity (+int/wil def)
 2.
     - Mind Read
     - Psionic Sliver (range)
@@ -238,13 +304,13 @@
     - Telekinesis (range throw)
 4.
     - Calm (remove status)
-    - Psi Slice (melee)
+    - Psi Slice (adj)
 5.
     - Placate (stop action)
     - Telekinetic Jolt
 6.
     - Manipulate Target (force target)
-    - Psi Sweep (multi melee)
+    - Psi Sweep (multi adj)
 7.
     - 
     - 
@@ -265,19 +331,19 @@
     - Tenacity (can use end in place of mig for pr)
 2.
     - Cover (adjacent allies get passive +phs/enr def)
-    - Shield Bash (melee)
+    - Shield Bash (adj)
 3.
     - Active Defense (react +def)
     - Shield Throw (range)
 4.
     - Block (take attack for ally)
-    - Shield Charge (move melee, knock back/down)
+    - Shield Charge (move adj, knock back/down)
 5.
     - Phalanx (chars behind can not be targeted)
     - Shield Bounce (chain range)
 6.
     - Reflect (react send phs/enr power back)
-    - Shield Pin (melee hold)
+    - Shield Pin (adj hold)
 7.
     - 
     - 
@@ -294,22 +360,22 @@
 #### Super Speed
 1.
     - Alacrity (passive +agility)
-    - Flurry (melee)
+    - Flurry (adj)
 2.
     - Fast Metabolism (passive +rest)
-    - Deft Strike (melee +pr)
+    - Deft Strike (adj +pr)
 3.
     - Accelerate (+agility)
-    - Quick Strike (quick action strike)
+    - Quick Strike (quick strike)
 4.
     - Overclock (dmg self to get end)
-    - Momentum Strike (melee, dmg for movement, knock back)
+    - Momentum Strike (adj, dmg for movement, knock back)
 5.
     - Super Movement (water/wall movement)
     - Hasten (+action)
 6.
     - Blur (active +phs/enr def)
-    - Whirlwind (aoe dmg, knock back/up)
+    - Whirlwind (area dmg, knock back/up)
 7.
     - 
     - 
@@ -326,18 +392,18 @@
 #### Super Strength
 1.
     - Mighty (passive +strength)
-    - Haymaker (melee, knock back)
+    - Haymaker (adj, knock back)
 2.
-    - Slam (melee, knock down)
+    - Slam (adj, knock down)
     - Hold (hold grappled)
 3.
-    - Charge (move melee, knock back/down)
+    - Charge (move adj, knock back/down)
     - Flex (+strength)
 4.
-    - Atlas Hammer (melee, knock up)
-    - Sucker Punch (melee, -pp)
+    - Atlas Hammer (adj, knock up)
+    - Sucker Punch (adj, -pp)
 5.
-    - Smash (melee, knock down, stun)
+    - Smash (adj, knock down, stun)
     - Hurl (throw grappled)
 6.
     - Stomp (multi range, knock back)
