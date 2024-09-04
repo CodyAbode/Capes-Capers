@@ -106,7 +106,7 @@ Falling characters take 1d6 PHS damage for at the end of the fall for every 2 un
 - **Knocked Down:** You are slowed. You can end this effect as a quick action, but do not regain your lost movement.
 - **Slowed:** Your speed is reduced by half.
 - **Stunned:** You are unable to act.
-- **Unconcious:** You are unable to act. This effect ends if you gain more than 0 HP. If your HP goes below the negative value of your HP maximum, you die.
+- **Unconcious:** You are unable to act. This effect ends if you gain more than 0 HP.
 
 # Player Characters
 Characters are created by coming up with identities, then selecting attributes, an origin, and power sets. See the following Powers section when you're ready to select your powers.
@@ -141,9 +141,13 @@ When text uses the full name of an ability, such as "Might", it is referring to 
 | 12-13 | +1 | 28-29 | +9 |
 | 14-15 | +2 | 30 | +10 |
 
-**Hit Points (HP)** are a measure of your current fortitude. When your HP hits 0, you are knocked unconscious. Your hit point maximum starts equal to your Endurance. Every time you gain a level, increase it by half your Endurance (rounded up).
+**Hit Points (HP)** are a measure of your current fortitude. Your hit point maximum starts equal to your Endurance. Every time you gain a level, increase it by half your Endurance (rounded up).
+
+When your HP hits 0, you become unconscious and suffer a stress point. If your HP goes below the negative value of your HP maximum, you die.
 
 **Power Points (PP)** are a measure of your current stamina, and are spent on powers. Your Power Point maximum starts equal to your Endurance. Every time you gain a level, increase it by your END.
+
+When your PP hits 0, any powers you have active end. If it is the first time this has happened during a mission, you suffer a stress point.
 
 **Speed** is a measurement of how far in Units you can move per turn. It is equal to 5 plus your character's AGI.
 
@@ -222,7 +226,7 @@ Auxiliary Powers are supplemental powers available to all characters at certain 
     - **Requirements:** None
     - **Description:** One of your attributes are enhanced, granting you +2 to that attribute value. This power can be gained again for other attributes.
 - **Flight**
-    - **Action Type:** Quick Action (Activation)
+    - **Action Type:** Quick Action (Active)
     - **Power Point Cost:** 2
     - **Requirements:** None
     - **Description:** You can fly while maintaining this power. If you are moved by another character's action, you lose flight and take any applicable falling damage.
@@ -342,12 +346,12 @@ You have the ability to manipulate energy to create physical forces. The primary
     - **Requirements:** None
     - **Description:** You send a bolt of force at an enemy within 10U, dealing (PMd6 + WIL) PHS damage and knock them back 2U, unless resisted.
 - **Force Wall**
-    - **Action Type:** Action (Activation)
+    - **Action Type:** Action (Active)
     - **Power Point Cost:** 2*
     - **Requirements:** 2*
     - **Description:** You create a wall of force in an empty space within 10U. This is repeated (PM) time(s). All created force walls must be adjacent. The force walls use your WIL for resisting, and are dissapated upon taking any damage.
 - **Force Cage**
-    - **Action Type:** Action (Activation)
+    - **Action Type:** Action (Active)
     - **Power Point Cost:** 4
     - **Requirements:** PL3
     - **Description:** You create a force field around an enemy. They cannot move or target characters outside the force field, nor be targeted themselves. The force field uses your WIL to resist and dissapates upon taking any damage.
@@ -378,17 +382,17 @@ You have equipment that you have constructed or acquired to gain tactical advant
 ### Invisibility
 You can bend light to conceal people and objects.
 - **Cloak**
-    - **Action Type:** Quick Action (Activation)
+    - **Action Type:** Quick Action (Active)
     - **Power Point Cost:** 2
     - **Requirements:** None
     - **Description:** You bend light around yourself to become Invisible. Attacks are made against you with disadvantage. You lose this power if you use a power from any other Power Set, or take any damage.
 - **Conceal**
-    - **Action Type:** Quick Action (Activation)
+    - **Action Type:** Quick Action (Active)
     - **Power Point Cost:** 2
     - **Requirements:** None
     - **Description:** You make an object invisible. If it is damaged or moved by any other character, this power ends.
 - **Grant Invisibility**
-    - **Action Type:** Quick Action (Activation)
+    - **Action Type:** Quick Action (Active)
     - **Power Point Cost:** 4
     - **Requirements:** PL3
     - **Description:** You grant the effects of Invisibility to another character.

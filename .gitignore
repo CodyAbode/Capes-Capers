@@ -1,0 +1,3 @@
+# Ignore images in root, but not in assets
+*.png
+!assets/*.png
