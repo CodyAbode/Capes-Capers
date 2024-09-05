@@ -34,7 +34,7 @@
 - Offense and control tracks
 1.
     - Ranged Strike (range strike)
-    - Accurate (double pr mod)
+    - Accurate (passive self +pr)
 2.
     - Power Shot (range)
     - Blunt Arrow (range, knock back, down)
@@ -160,7 +160,7 @@
     - Phoenix (self res)
     - 
 
-#### Force Control
+#### Force Control (old)
 - Force field and blast tracks
 1.
     - Force Field (self +def)
@@ -180,6 +180,39 @@
 6.
     - Dispersion Bubble (+def area)
     - Repulsion Bomb (area knock back)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
+#### Force Control
+- Force field and blast tracks
+1.
+    - Force Field (react self +phs/enr res)
+    - Force Push (action adj phs, knock back)
+2.
+    - Protection Field (react ally +phs/enr res)
+    - Force Bolt (action range phs, knock back)
+3.
+    - Force Wall (action active adj chain create wall)
+    - Force Cone (action cone phs, knock back)
+4.
+    - Force Bubble (action active self +bubble)
+    - Repulsion Blast (action range phs knock back, knock down)
+5.
+    - Detention Bubble (action active range +bubble)
+    - 
+6.
+    - Psionic Dispersion (passive force protection now work on mnt)
+    - Repulsion Bomb (action area phs knock back, knock down)
 7.
     - 
     - 
@@ -258,7 +291,7 @@
     - 
     - 
 
-#### Light Bending
+#### Light Control
 - Was Invisibility
 1.
     - Cloak (self)
@@ -273,8 +306,8 @@
     - Grant Invisibility (ally)
     - Gleam (multi range)
 5.
-    - Spectre (range scare)
     - 
+    - Spectre (range scare)
 6.
     - Superior Invisibility
     - Deceive (force target)
@@ -408,6 +441,71 @@
 6.
     - Stomp (multi range, knock back)
     - Crush (dmg grappled)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
+#### Primal Affinity
+- Beast shaping and summoning tracks
+1.
+    - Thrash (action adj phs)
+    - Pack Hunter (passive self +pr to enemies with adj allies)
+2.
+    - Critter Form (action active self +agility become small)
+    - Bird Strike (action range phs)
+3.
+    - Howl (quick area heal +res)
+    - Summon Critter (action active summon)
+4.
+    - Beast Form (action active self +agility/might)
+    - Blood Hunt (quick ranged +pr for self and summons)
+5.
+    - Pounce (action adj, knock down)
+    - Summon Beast (action active summon)
+6.
+    - Brute Form (action active self +might/endurance become large)
+    - Pack Frenzy (quick all summons make an extra attack)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
+#### Arsenal
+1.
+    - Gunshot (action range phs, ammo effect)
+    - Buttstroke (action adj knock back, knock down)
+2.
+    - Burst Fire (action range phs, ammo effect)
+    - Accurate (passive self +pr)
+3.
+    - Buckshot (action cone phs, ammo effect)
+    - Specialized Ammunition (quick change ammo effect)
+4.
+    - Suppressive Fire (action area phs, ammo effect)
+    - Beanbag (action range knock back, stun)
+5.
+    - Snipe (action range phs, ammo effect)
+    - Grenade (action area phs, ammo effect)
+6.
+    - Executioner's Shot (action adj phs, ammo effect)
+    - Advanced Ammunition (quick change ammo effect)
 7.
     - 
     - 
