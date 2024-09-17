@@ -100,9 +100,10 @@ Falling characters take 1d6 PHS damage for at the end of the fall for every 2 un
 
 ## Status Effects
 - **Blind:** You suffer a Penalty Die when making Power Rolls targeting other characters.
-- **Burning:** At the start of your turn, you take 1d4 ENR damage. You or another character can end this effect as an action.
+- **Burning:** At the start of your turn, you take 1d4 ENR damage. You or another adjacent character can end this effect as an action.
+- **Bleeding:** At the start of your turn, you take 1d4 PHS damage. This effect ends when you receieve any healing.
 - **Grappled:** You are immobilized and are moved along with the character grappling you. As an action, you can attempt to escape by making a MIG or AGI roll that the grappling character can resist with Might.
-- **Immobilized:** Your speed is 0.
+- **Immobilized:** Your speed is 0. If you are knocked down, you can not get back up.
 - **Knocked Down:** You are slowed. You can end this effect as a quick action, but do not regain your lost movement.
 - **Slowed:** Your speed is reduced by half.
 - **Stunned:** You are unable to act.
@@ -190,6 +191,8 @@ When creating a new character, select two Power Sets, then select any two powers
 
 Each time you level up, you gain two more powers of your choice from your Power Sets. You may get another Auxiliary Power at levels 4, 8, and 12.
 
+You cannot select a power with the same name more than once.
+
 ## Inherent Powers
 Inherent Powers are basic powers that all characters possess.
 - **Strike**
@@ -207,7 +210,7 @@ Inherent Powers are basic powers that all characters possess.
     - **Action Type:** Action
     - **Power Point Cost:** 0
     - **Requirements:** None
-    - **Description:** Until your next turn, you do not provoke opportunity attacks and attacks made against you suffer a penalty die.
+    - **Description:** Until your next turn, you do not provoke opportunity attacks, and attacks that target you suffer a penalty die.
 - **Rest**
     - **Action Type:** Action
     - **Power Point Cost:** 0
@@ -264,51 +267,394 @@ Auxiliary Powers are supplemental powers available to all characters at certain 
 ## Power Sets
 Power Sets are the general category of your character's superpowers and contain the specific powers you can use on missions. Each set has 20 powers.
 
+### Archery
+Your proficiency with a bow and arrows allows you to strike from afar. The primary attribute for this set is Agility.
+- **Power Shot**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You shoot an arrow at an enemy within 12u, dealing (PMd4 + AGI) PHS damage.
+- **Accurate**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** None
+    - **Description:** You add an additional +2 to AGI Power Rolls.
+- **Arrow Jab**
+    - **Action Type:** Action
+    - **Power Point Cost:** 1
+    - **Requirements:** PL2
+    - **Description:** You stab an adjacent enemy with an arrow, dealing (1d4 + AGI) PHS damage.
+- **Blunt Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL2
+    - **Description:** You shoot an arrow with a large, blunt tip at an enemy within 10u, dealing (PMd4 + AGI) PHS damage, and knocking them back 1u. Additionally, you might knock them down.
+- **Snap Shot**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** You quickly shoot an arrow at an enemy within 12u, dealing (PMd4 + AGI) PHS damage.
+- **Net Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL3
+    - **Description:** You shoot an arrow at an enemy within 10u. The arrow bursts into a net just before impact, grappling the target, unless resisted with Might or Agility. Additionally, you might knock them down.  
+    The net uses your Intellect for resisting, and is destroyed if the grapple is escaped, or upon taking any PHS or ENR damage.
+- **Fistful of Arrows**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You release a fistful of arrows from your bow, dealing dealing (PMd4 + AGI) PHS damage to all enemies in a 5u cone.
+- **Oil Slick Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You shoot an arrow at a surface you can see within 10u. The arrow has a tip filled with oil that bursts upon impact, spreading out in a 3u-radius circle. Any characters in the area of effect or that attempt to move in the area must make an AGI roll resisted by your Intellect, or be knocked down.  
+    If the oil slick comes into contact with fire, it is destroyed and all characters within burn.
+- **Fire Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You shoot an arrow with a self-igniting tip at an enemy within 12u, dealing (PMd6 + AGI) ENR damage. Additionally, you might cause them to burn.
+- **Taser Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You shoot an arrow with a electrically charged tip at an enemy within 12u, dealing (PMd6 + AGI) ENR damage. Additionally, you might stun them until the end of their turn.
+- **Explosive Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You shoot an arrow at an enemy or surface you can see within 10u. The arrow tip explodes on impact in a 3u-radius circle, dealing (PMd6 + AGI) PHS damage to all characters within. Additionally, you might knock them back 2u.
+- **EMP Arrow**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You shoot an arrow at an enemy or surface you can see within 10u. The arrow tip releases a electromagnetic pulse on impact, disabling devices and stunning Technology characters until the end of your next turn, unless resisted with INT or WIL.
+
+### Arsenal
+You are equipped and skilled with one or more firearms. The primary attribute for this set is Agility.
+- **Gunshot**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You fire a shot at an enemy within 10u, dealing (PMd4 + AGI) PHS damage. Additionally, you might apply an ammunition effect.
+- **Buttstroke**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You club an adjacent enemy with the grip or stock of your firearm, dealing (PMd4 + AGI) PHS damage, and knocking them back 1u. Additionally, you might knock them down.
+- **Burst Fire**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL2
+    - **Description:** You fire a burst of rounds at an enemy within 10u, dealing (PMd6 + AGI) PHS damage. Additionally, you might apply an ammunition effect.
+- **Accurate**
+    - **Action Type:** Action
+    - **Power Point Cost:** -
+    - **Requirements:** PL2
+    - **Description:** You add an additional +2 to AGI Power Rolls.
+- **Buckshot**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** You fire pellets in a 3u cone, dealing (PM2d4 + AGI) PHS damage to all characters within. Additionally, you might apply an ammunition effect.
+- **Specialized Ammunition**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 0
+    - **Requirements:** PL3
+    - **Description:** You reload your firearm with one of the following specialized ammunition types. Until the end of your turn, you Arsenal powers are modified based on the type of ammunition you select.
+        - **Full Metal Jacket**: You add +2 to your Power Rolls.
+        - **Hollow Point**: Targets additionally bleed.
+        - **Slug**: Targets are additionally knocked back 1u.
+- **Suppressive Fire**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You continously fire at an enemy or surface you can see within 10u. All characters within a 3u-radius circle are dealt (PMd4 + AGI) PHS damage and suffer a penalty die to their next power roll until your next turn, even if the damage is resisted. Additionally, you might apply an ammunition effect.
+- **Beanbag**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** You launch a bean bag round at an enemy within 10u, dealing (1d4 + AGI) PHS damage and knocking them down, unless resisted. Additionally, you might stun them until the end of their turn.
+- **Snipe**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You carefully aim your shot at an enemy within 10u, gaining an Advantage Die. You deal (PMd6 + AGI) PHS damage. Additionally, you might apply an ammunition effect.
+- **Grenade**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You launch a grenade at an enemy or surface you can see within 10u. The grenade explodes on impact in a 3u-radius circle, dealing (PMd6 + AGI) PHS damage to all characters within. Additionally, you might knock them back 2u.
+- **Executioner's Shot**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You fire a shot at an adjacent knocked down enemy, dealing (PMd8 + AGI) PHS damage. If your power roll is high enough for additional effects, treat your roll as a natural 20, doubling your power multiplier, and applying an ammunition effect.
+- **Advanced Ammunition**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 0
+    - **Requirements:** PL6
+    - **Description:** You gain access to advanced ammunition options. Until the end of your turn, you Arsenal powers are modified based on the type of ammunition you select.
+        - **Explosive**: Your powers affect adjacent characters.
+        - **Incendiary**: Targets additionally burn.
+        - **Silvered**: Magic Targets take additional damage equal to the damage die of the power.
+
 ### Claws
 You have talons, blades or spines that protrude from your fingers, in-between your knuckles, or all over your body. The primary attribute for this set is Agility.
+- **Slash**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You slash an adjacent target with your claws, dealing (PMd6 + AGI) PHS damage. Additionally, you might cause them to bleed.
 - **Savagery**
     - **Action Type:** Passive 
     - **Power Point Cost:** -
     - **Requirements:** None
     - **Description:** You add your attribute modifier to damage rolls an additional time.
-- **Slash**
+- **Lunge**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
-    - **Requirements:** None
-    - **Description:** You slash an adjacent target with your claws, dealing (PMd6 + AGI) PHS damage.
+    - **Requirements:** PL2
+    - **Description:** You may move (1 + AGI) units towards an enemy. If adjacent, you may slash your target for (PMd6 + AGI) PHS damage. Additionally, you might knock them back 1u.
+- **Fling**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL2
+    - **Description:** You throw spines at an enemy within 5u, dealing (PMd4 + AGI) PHS damage.  Additionally, you might cause them to bleed.
 - **Rake**
     - **Action Type:** Action
     - **Power Point Cost:** 4*
-    - **Requirements:** PL2
-    - **Description:** You tear into an adjacent character's defenses, dealing (PMd6 + AGI) PHS damage, and reduce their attributes by 2 when they are resisting PHS or ENR damage, unless resisted.
+    - **Requirements:** PL3
+    - **Description:** You tear into an adjacent character's defenses, dealing (PMd6 + AGI) PHS damage, and reduce their attributes by 2 when they are resisting PHS or ENR damage, unless resisted.  Additionally, you might cause them to bleed.
+- **Spinetrops**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL3
+    - **Description:** You batter a surface within 5u with spines, creating a 3u-radius circle spiked surface. Characters that move through the area are dealt (1d4 + AGI) PHS for every unit moved at the end of their movement.
 - **Spin Slash**
     - **Action Type:** Action
     - **Power Point Cost:** 4*
-    - **Requirements:** PL3
-    - **Description:** You slash at all adjacent characters, dealing (PMd8 + AGI) PHS damage.
+    - **Requirements:** PL4
+    - **Description:** You slash at all adjacent characters, dealing (PMd6 + AGI) PHS damage.  Additionally, you might cause them to bleed.
+- **Piercing Spine**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You launch sharp spines at at an enemy within 5u, dealing (PMd4 + AGI) PHS damage. Additionally, you might cause them to bleed.  
+    If this damage is not resisted, the spines pass through the enemy and hit an adjacent character opposite of you from the target. This can happen up to twice.
+- **Pounce**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You may leap up to (3 + AGI) units towards an enemy. If adjacent, you may slash your target for (PMd8 + AGI) PHS damage. Additionally, you might knock them down.
+- **Pinning Spine**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You launch a large spine at an enemy within 5u, dealing (PMd6 + AGI) PHS damage and immobilizing them, unless resisted. Additionally, you might knock them down.
+- **Impale**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You drive your claws into an adjacent enemy, dealing (PMd8 + AGI) PHS damage and grappling them. Additionally, you might cause them to bleed.
+- **Spine Burst**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You release an explosion of spines, dealing (PMd6 + AGI) PHS damage to all characters within 3u of you. Additionally, you might cause them to bleed.
 
-### Electricity Control
-Electricity leaps and sparks at your command. The primary attribute for this set is Will.
-- **Static Bolt**
+### Edged Weapon Mastery
+You wield a blade such as a sword, dagger, or axe. The primary attributes for this set is Might and Agility.
+- **Slice**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You shoot a bolt of electricity at an enemy within 5U, dealing (PMd6 + WIL) ENR damage, and reduce their END but half as much as the inflicted damage.
-- **Short Circuit**
+    - **Description:** You swing your blade at an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage.
+- **Throw Blade**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You send a surge of power through an enemy or object, dealing (PMd8 + WIL) ENR damage. Electronic enemies or objects take double damage from this power.
-- **Charge Up**
-    - **Action Type:** Quick Action
-    - **Power Point Cost:** 2
+    - **Description:** You throw a blade at an enemy within 10u, dealing (PMd4 + (MIG or AGI)) PHS damage.
+- **Chop**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
     - **Requirements:** PL2
-    - **Description:** Double the Power Multiple of your next power this turn.
-- **Chain Lightning**
+    - **Description:** You chop an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage. Additionally, you might knock them down.
+- **Raise Weapon**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL2
+    - **Description:** You raise your weapon above your head to inspire your team. You all gain +1 to power rolls this encounter.
+- **Cleave**
     - **Action Type:** Action
     - **Power Point Cost:** 4*
     - **Requirements:** PL3
-    - **Description:** You shock an enemy within 5U, dealing (PMd6 + WIL) ENR damage. If another enemy is within 2U, repeat the power against them. This can happen a number of times equal to PM.
+    - **Description:** You swing your blade in a wide arc, hitting up to 3 enemies that are adjacent to you, and each other. You deal (PMd6 + (MIG or AGI)) PHS damage to each of them.
+- **Parry**
+    - **Action Type:** Reaction
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** When you are targeted by an adjacent character with a power that deals PHS damage, you can attempt to block the attack with your blade, gaining +PM to your resistance.
+- **Quick Slash**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You quickly slash an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage.
+- **Twist Blade**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** Immediately after dealing damage with a Edged Weapon Mastery power to an adjacent target, you can twist your blade, dealing (1d4 + (MIG or AGI)) and causing them to bleed, unless resisted.
+- **Feint**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL5
+    - **Description:** You deceive your enemy with a fake attack, providing an advantage die on your next power this turn.
+- **Pommel Smash**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You smash an adjacent enemy with the handle of your weapon, dealing (PMd6 + (MIG or AGI)) PHS damage, and knocking them down, unless resisted. Additionally, you might stun them until the end of their turn.
+- **Whirling Blade**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You begin to spin in circles with your blade out, dealing (PMd6 + (MIG or AGI)) PHS damage to all adjacent characters. You become slowed, but you may move and each character that you become adjacent to for first time while using this power also takes damage.
+- **Deft Parry**
+    - **Action Type:** Reaction
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL6
+    - **Description:** When you are targeted with a power that deals PHS or ENR damage, you can attempt to block the attack with your blade, gaining +PM to your resistance.
+
+### Electricity Control
+Electricity leaps and sparks at your command. The primary attribute for this set is Will.
+- **Zap**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You shoot a bolt of electricity at an enemy within 5U, dealing (PMd4 + WIL) ENR damage. Additionally, you might reduce their current END by half of the damage dealt.
+- **Shock**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You shock an adjacent enemy, dealing (PMd6 + WIL) ENR damage. Additionally, you might reduce their current END by half of the damage dealt.
+- **Short Circuit**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL2
+    - **Description:** You send a surge of power through an enemy or object, dealing (PMd6 + WIL) ENR damage. Technology characters take double damage.
+- **Dynamo**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 2
+    - **Requirements:** PL2
+    - **Description:** Until the end of your turn, recover a Power Point for every unit you move.
+- **Energize**
+    - **Action Type:** Action
+    - **Power Point Cost:** 1*
+    - **Requirements:** PL3
+    - **Description:** You transfer your energy to an adjacent ally and they recover (PM) Power Points.
+- **Arc Ladder**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** You shock an adjacent enemy with a rising arc that deals (PMd6 + WIL) ENR damage and knocks them up 2u. Additionally, you might knock them up 2u higher.
+- **Charge Up**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** Double the Power Multiple of your next power this turn.
+- **Tase**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You shock an adjacent enemy, dealing (PMd6 + WIL) ENR damage and knock them down, unless resisted. Additionally, you might stun them until the end of their turn.
+- **Chain Lightning**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You send a bolt of lightning at an enemy within 5u, dealing (PMd6 + WIL) ENR damage. Until it is resisted, the bolt continues to jump to enemies within range. It cannot hit the same character twice and the range reduces by 1u every jump.
+- **Inductor**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** PL5
+    - **Description:** Your Electricity Control powers that target an adjacent enemy can target an enemy within 5u provided both you and the target are adjacent to a conductive material such as metal or water.
+- **Shock Wave**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You discharge a burst of electricity, dealing (PMd6 + WIL) ENR damage to all characters within 3u of you. Additionally, you might reduce their current END by half of the damage dealt.
+- **Electric Fence**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 6
+    - **Requirements:** PL6
+    - **Description:** You create a electric fence between two walls within 5u of you and each other. Characters within are dealt (PMd6 + WIL) ENR damage. Any characters that pass through the fence also take damage. This power ends if you use it again or if you are stunned.
+
+### Fire Control
+You can control the essence of fire. The primary attribute for this set is Will.
+- **Scorch**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You wreathe yourself in fire and strike an enemy, dealing (PMd6 + WIL) ENR damage. Additionally, you might cause them to burn.
+- **Flare**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** None
+    - **Description:** You throw a bolt of fire at an enemy within 10U, dealing (PMd4 + WIL) ENR damage. Additionally, you might cause them to burn.
+- **Ignite**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2
+    - **Requirements:** PL2
+    - **Description:** You ignite an adjacent enemy, causing them to burn.
+- **Smolder**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2
+    - **Requirements:** PL2
+    - **Description:** You create a smoldering fire centered on yourself or a point you can see within 10U. Smoke spreads from the fire in a 3U-radius sphere. When a non-adjacent character is targetted within or through the smoke, that attack is suffers a penalty die unless the attacker has Super Sense. The smoke remains for 5 rounds.
+- **Flame Wave**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL3
+    - **Description:** ...
+- **Warmth**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL3
+    - **Description:** ...
+- **Cauterize**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL4
+    - **Description:** ...
+- **Immolate**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL4
+    - **Description:** ...
+- **Stoke**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **Combust**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **Fireball**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL6
+    - **Description:** ...
+- **Flashfire**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL6
+    - **Description:** ...
+
+--- Old Power Sets ---
 
 ### Fire Control
 You can control the essence of fire. The primary attribute for this set is Will.
@@ -494,7 +840,3 @@ You possess phenomenal strength and are able exert great physical force. The pri
 - Character sizes:
     - Small: +2 Agility, -2 total from Might and/or Endurance
     - Large: +2 total to Might and/or Endurance, -2 Agility
-- TODO Powers:
-    - Water Control
-    - Plant Control
-    - Shapeshifting

@@ -1,4 +1,4 @@
-#### Power Set Template
+### Power Set Template
 1.
     - 
     - 
@@ -30,13 +30,90 @@
     - 
     - 
 
-#### Archery
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** None
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** None
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL2
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL2
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL3
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL3
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL4
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL4
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL6
+    - **Description:** ...
+- **...**
+    - **Action Type:** Action
+    - **Power Point Cost:** ...
+    - **Requirements:** PL6
+    - **Description:** ...
+
+Archery
+Arsenal
+Claws
+Edged Weapon Mastery
+Electricity Control
+Fire Control
+Force Control
+Gadgetry
+Ice Control
+Light Control
+Mind Control
+Primal Affinity
+Shield Mastery
+Super Speed
+Super Strength
+
+### Archery
 - Offense and control tracks
 1.
-    - Ranged Strike (range strike)
+    - Power Shot (range)
     - Accurate (passive self +pr)
 2.
-    - Power Shot (range)
+    - Arrow Jab (action adj phs)
     - Blunt Arrow (range, knock back, down)
 3.
     - Snap Shot (quick range)
@@ -63,7 +140,7 @@
     - 
     - 
 
-#### Claws
+### Claws
 - adj and range tracks
 1.
     - Slash (adj)
@@ -72,7 +149,7 @@
     - Lunge (adj, move)
     - Fling (range)
 3.
-    - Rake (adj, -def)
+    - Rake (adj, -res)
     - Spinetrops (create dmg area)
 4.
     - Spin Slash (multi adj)
@@ -96,7 +173,7 @@
     - 
     - 
 
-#### Electricity Control
+### Electricity Control
 1.
     - Zap (range, -pp)
     - Shock (adj, -pp)
@@ -128,7 +205,7 @@
     - 
     - 
 
-#### Fire Control
+### Fire Control
 1.
     - Scorch (adj)
     - Flare (range)
@@ -160,40 +237,7 @@
     - Phoenix (self res)
     - 
 
-#### Force Control (old)
-- Force field and blast tracks
-1.
-    - Force Field (self +def)
-    - Force Bolt (range, knock back)
-2.
-    - Protection Field (ally +def)
-    - Repulsion Bolt (range, knock back, down)
-3.
-    - 
-    - 
-4.
-    - Force Bubble (self, +def)
-    - 
-5.
-    - Detention Bubble (range, cage enemy/ally)
-    - 
-6.
-    - Dispersion Bubble (+def area)
-    - Repulsion Bomb (area knock back)
-7.
-    - 
-    - 
-8.
-    - 
-    - 
-9.
-    - 
-    - 
-10.
-    - 
-    - 
-
-#### Force Control
+### Force Control
 - Force field and blast tracks
 1.
     - Force Field (react self +phs/enr res)
@@ -226,7 +270,7 @@
     - 
     - 
 
-#### Gadgetry
+### Gadgetry
 - Utility centric set that gets the same utility powers as other sets, but gets them later
 1.
     - Grappling Hook
@@ -259,7 +303,7 @@
     - 
     - 
 
-#### Ice Control
+### Ice Control
 1.
     - Chill (action adj enr, slow)
     - Icicle (action range enr, slow)
@@ -271,13 +315,13 @@
     - Frost (action range enr, immob)
 4.
     - Freeze (adj hold)
-    - Ice Armor (action active self +phs/enr def)
+    - Ice Armor (action active self +phs/enr res)
 5.
     - 
     - Ice Lance (action range enr, slow)
 6.
     - Frost Wave (action cone enr, immob)
-    - Ice Block (react self, +def)
+    - Ice Block (react self, +res)
 7.
     - 
     - 
@@ -291,7 +335,7 @@
     - 
     - 
 
-#### Light Control
+### Light Control
 - Was Invisibility
 1.
     - Cloak (self)
@@ -313,7 +357,7 @@
     - Deceive (force target)
 7.
     - Phantasm (create character illusion)
-    - Hard Light Shield (react +def)
+    - Hard Light Shield (react +res)
 8.
     - 
     - Hard Light Blast (range, blind)
@@ -324,11 +368,11 @@
     - 
     - 
 
-#### Mind Control
+### Mind Control
 - Control and offense tracks
 1.
     - Mind Sense
-    - Clarity (+int/wil def)
+    - Clarity (+int/wil res)
 2.
     - Mind Read
     - Psionic Sliver (range)
@@ -357,16 +401,16 @@
     - 
     - 
 
-#### Shield Mastery
+### Shield Mastery
 - Defensive and offensive tracks
 1.
-    - Deflection (passive +phs/enr def)
+    - Deflection (passive +phs/enr res)
     - Tenacity (can use end in place of mig for pr)
 2.
-    - Cover (adjacent allies get passive +phs/enr def)
+    - Cover (adjacent allies get passive +phs/enr res)
     - Shield Bash (adj)
 3.
-    - Active Defense (react +def)
+    - Active Defense (react +res)
     - Shield Throw (range)
 4.
     - Block (take attack for ally)
@@ -390,7 +434,7 @@
     - 
     - 
 
-#### Super Speed
+### Super Speed
 1.
     - Alacrity (passive +agility)
     - Flurry (adj)
@@ -407,7 +451,7 @@
     - Super Movement (water/wall movement)
     - Hasten (+action)
 6.
-    - Blur (active +phs/enr def)
+    - Blur (active +phs/enr res)
     - Whirlwind (area dmg, knock back/up)
 7.
     - 
@@ -422,7 +466,7 @@
     - 
     - 
 
-#### Super Strength
+### Super Strength
 1.
     - Mighty (passive +strength)
     - Haymaker (adj, knock back)
@@ -454,7 +498,7 @@
     - 
     - 
 
-#### Primal Affinity
+### Primal Affinity
 - Beast shaping and summoning tracks
 1.
     - Thrash (action adj phs)
@@ -487,7 +531,7 @@
     - 
     - 
 
-#### Arsenal
+### Arsenal
 1.
     - Gunshot (action range phs, ammo effect)
     - Buttstroke (action adj knock back, knock down)
@@ -518,3 +562,36 @@
 10.
     - 
     - 
+
+### Edged Weapon Mastery
+1.
+    - Slice (action adj phs)
+    - Throw Blade (action range phs)
+2.
+    - Chop (action adj phs, knock down)
+    - Raise Weapon (quick +res)
+3.
+    - Cleave (action cone phs, knock back)
+    - Parry (react +adj phys res)
+4.
+    - Quick Slash (quick adj phs)
+    - Twist Blade (quick after adj power cause bleed, phs)
+5.
+    - Feint (quick action +adv)
+    - Pommel Smash (action adj phs knock down, stun)
+6.
+    - Whirling Blade (action circle phs, knock back)
+    - Deft Parry (react +phys res)
+7.
+    - 
+    - 
+8.
+    - 
+    - 
+9.
+    - 
+    - 
+10.
+    - 
+    - 
+
