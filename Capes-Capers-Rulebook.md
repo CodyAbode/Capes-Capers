@@ -1,10 +1,10 @@
 # Overview
-**Capes & Capers** (C&C) is a Tabletop Role-playing Game (TTRPG) for telling stories featuring superpowered heroes, villians, and rogues!
+**Capes & Capers** (C&C) is a Tabletop Role-playing Game (TTRPG) for telling stories featuring superpowered heroes, villains, and rogues!
 
 You play a superpowered character aligned with your fellow player's characters as a part of a Super Team. The game is played in two repeating phases: Downtime, and Missions.
 
 # Downtime
-During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits narratively, but it is typically a few days. Tracks do not neccesarily have to be rolled chronologically.
+During downtime, you take turns rolling on specific tracks. You may roll on any number of tracks you would like, but every roll must pass a higher threshold. Performing well on a track imparts benefits, but performing poorly or neglecting a track has consequences. Time passes during downtime however best fits the narrative, but it is typically a few days. Tracks do not necessarily have to be rolled chronologically.
 
 When you enter downtime, you recover all resources spent during missions such as HP and PP.
 
@@ -67,8 +67,13 @@ To enter initiative, roll a d20, and add your AGI. Use your Agility to resolve t
 
 At the start of your turn, you get an Action, Quick Action, Reaction and Movement. You can use your reaction after turn, but cannot use it again until the start of your next turn.
 
+## Power Multiplier
+Powers that have a cost marked with a "*" allow you to spend additional Power Points to make the power stronger. This is done prior to your power roll. The Power Multiplier (PM) is equal to how many times you paid the cost of the power. Power points must be spent in multiples of the cost. The PM cannot be less than 1 nor greater than your power Level.
+
+For example, if you are at PL3 and have a power with a power point cost of "2*", you can spend 2, 4, or 6 PP for a PM of 1, 2, or 3.
+
 ## Power Rolls
-Using a power that targets enemies usually require a Power Roll. These are performed by rolling a d20 and add the modifier of the attribute associated with the power. The target of the power may resist the power using their attribute values. You must meet or beat their resistance in order for your power to affect them.
+Using a power that targets enemies usually requires a Power Roll. These are performed by rolling a d20 and adding the modifier of the attribute associated with the power. The target of the power may resist the power using their attribute values. You must meet or beat their resistance in order for your power to affect them.
 
 Powers that deal damage are resisted based on the type of damage they deal, as listed below. Otherwise, the power will state which attribute(s) can be used for Resisting.
 
@@ -76,8 +81,10 @@ Powers that deal damage are resisted based on the type of damage they deal, as l
 - Energy (ENR) can be resisted with AGI or WIL.
 - Mental (MNT) can be resisted with INT or WIL.
 
+Powers that target multiple characters only require one power roll, but the targeted characters resist individually.
+
 ### Advantages and Penalties
-Advantage Dice and Penalty Dice are rolled in addtion to a normal d20 roll and you keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
+Advantage Dice and Penalty Dice are rolled in addition to a normal d20 roll and you keep the highest or lowest roll among all the dice rolled. These can be stacked and cancel each other out equally.
 
 Training Dice can be expended to get an Advantage Die on a Power Roll or to increase a Power Modifier by 1. Multiple TD can be expended on a single power. These are gained by training during Downtime, but may also be awarded by your GM.
 
@@ -99,15 +106,15 @@ Knocking a character causes them to move in a specified direction, including up 
 Falling characters take 1d6 PHS damage for at the end of the fall for every 2 units fallen.
 
 ## Status Effects
-- **Blind:** You suffer a Penalty Die when making Power Rolls targeting other characters.
-- **Burning:** At the start of your turn, you take 1d4 ENR damage. You or another adjacent character can end this effect as an action.
-- **Bleeding:** At the start of your turn, you take 1d4 PHS damage. This effect ends when you receieve any healing.
+- **Blind:** Unless you have Super Sense, you suffer a Penalty Die when making Power Rolls targeting other characters., and other characters gain an advantage die for attacks targeting you.
+- **Burning:** At the end of your turn, you take 1d4 ENR damage. You or another adjacent character can end this effect as an action.
+- **Bleeding:** At the start of your turn, you take 1d4 PHS damage. This effect ends when you receive any healing.
 - **Grappled:** You are immobilized and are moved along with the character grappling you. As an action, you can attempt to escape by making a MIG or AGI roll that the grappling character can resist with Might.
 - **Immobilized:** Your speed is 0. If you are knocked down, you can not get back up.
 - **Knocked Down:** You are slowed. You can end this effect as a quick action, but do not regain your lost movement.
 - **Slowed:** Your speed is reduced by half.
 - **Stunned:** You are unable to act.
-- **Unconcious:** You are unable to act. This effect ends if you gain more than 0 HP.
+- **Unconscious:** You are unable to act. This effect ends if you gain more than 0 HP.
 
 # Player Characters
 Characters are created by coming up with identities, then selecting attributes, an origin, and power sets. See the following Powers section when you're ready to select your powers.
@@ -217,9 +224,15 @@ Inherent Powers are basic powers that all characters possess.
     - **Requirements:** None
     - **Description:** Roll a number of d4 equal to half your PL. You regain that amount of PP.
 - **Grapple**
-    - ...
+    - **Action Type:** Action
+    - **Power Point Cost:** 0
+    - **Requirements:** None
+    - **Description:** You grab an adjacent character with a MIG Power Roll, grappling them unless they resist with MIG or AGI.
 - **Throw**
-    - ...
+    - **Action Type:** Action
+    - **Power Point Cost:** 0
+    - **Requirements:** None
+    - **Description:** You throw an adjacent object at an enemy within 10u. Make a MIG or AGI Power Roll, dealing (1d4 + (MIG or AGI)) PHS damage.
 
 ## Auxiliary Powers
 Auxiliary Powers are supplemental powers available to all characters at certain power levels.
@@ -237,7 +250,7 @@ Auxiliary Powers are supplemental powers available to all characters at certain 
     - **Action Type:** Reaction
     - **Power Point Cost:** 1
     - **Requirements:** None
-    - **Description:** When a friendly character makes a attribute roll or tries to resist an effect, you can add your attribute's modifer.
+    - **Description:** When a friendly character makes a attribute roll or tries to resist an effect, you can add your attribute's modifier.
 - **Super Jump**
     - **Action Type:** Passive
     - **Power Point Cost:** -
@@ -328,9 +341,9 @@ Your proficiency with a bow and arrows allows you to strike from afar. The prima
     - **Description:** You shoot an arrow at an enemy or surface you can see within 10u. The arrow tip explodes on impact in a 3u-radius circle, dealing (PMd6 + AGI) PHS damage to all characters within. Additionally, you might knock them back 2u.
 - **EMP Arrow**
     - **Action Type:** Action
-    - **Power Point Cost:** 6*
+    - **Power Point Cost:** 6
     - **Requirements:** PL6
-    - **Description:** You shoot an arrow at an enemy or surface you can see within 10u. The arrow tip releases a electromagnetic pulse on impact, disabling devices and stunning Technology characters until the end of your next turn, unless resisted with INT or WIL.
+    - **Description:** You shoot an arrow at an enemy or surface you can see within 10u. The arrow tip releases a electromagnetic pulse on impact, disabling devices and stunning Technology characters within a 3u-radius circle until the end of your next turn, unless resisted with INT or WIL.
 
 ### Arsenal
 You are equipped and skilled with one or more firearms. The primary attribute for this set is Agility.
@@ -371,7 +384,7 @@ You are equipped and skilled with one or more firearms. The primary attribute fo
     - **Action Type:** Action
     - **Power Point Cost:** 4*
     - **Requirements:** PL4
-    - **Description:** You continously fire at an enemy or surface you can see within 10u. All characters within a 3u-radius circle are dealt (PMd4 + AGI) PHS damage and suffer a penalty die to their next power roll until your next turn, even if the damage is resisted. Additionally, you might apply an ammunition effect.
+    - **Description:** You continuously fire at an enemy or surface you can see within 10u. All characters within a 3u-radius circle are dealt (PMd4 + AGI) PHS damage and suffer a penalty die to their next power roll until your next turn, even if the damage is resisted. Additionally, you might apply an ammunition effect.
 - **Beanbag**
     - **Action Type:** Action
     - **Power Point Cost:** 4
@@ -463,7 +476,7 @@ You have talons, blades or spines that protrude from your fingers, in-between yo
     - **Action Type:** Action
     - **Power Point Cost:** 6*
     - **Requirements:** PL6
-    - **Description:** You release an explosion of spines, dealing (PMd6 + AGI) PHS damage to all characters within 3u of you. Additionally, you might cause them to bleed.
+    - **Description:** You release an explosion of spines, dealing (PMd6 + AGI) PHS damage to all other characters within 3u of you. Additionally, you might cause them to bleed.
 
 ### Edged Weapon Mastery
 You wield a blade such as a sword, dagger, or axe. The primary attributes for this set is Might and Agility.
@@ -471,17 +484,17 @@ You wield a blade such as a sword, dagger, or axe. The primary attributes for th
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You swing your blade at an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage.
+    - **Description:** You swing your blade at an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage. Additionally, you might gain +1 PM.
 - **Throw Blade**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You throw a blade at an enemy within 10u, dealing (PMd4 + (MIG or AGI)) PHS damage.
+    - **Description:** You throw a blade at an enemy within 10u, dealing (PMd4 + (MIG or AGI)) PHS damage. Additionally, you might gain +1 PM.
 - **Chop**
     - **Action Type:** Action
     - **Power Point Cost:** 4*
     - **Requirements:** PL2
-    - **Description:** You chop an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage. Additionally, you might knock them down.
+    - **Description:** You chop an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage. Additionally, you might knock them down. Additionally, you might gain +1 PM.
 - **Raise Weapon**
     - **Action Type:** Quick Action
     - **Power Point Cost:** 4
@@ -491,7 +504,7 @@ You wield a blade such as a sword, dagger, or axe. The primary attributes for th
     - **Action Type:** Action
     - **Power Point Cost:** 4*
     - **Requirements:** PL3
-    - **Description:** You swing your blade in a wide arc, hitting up to 3 enemies that are adjacent to you, and each other. You deal (PMd6 + (MIG or AGI)) PHS damage to each of them.
+    - **Description:** You swing your blade in a wide arc, hitting up to 3 enemies that are adjacent to you, and each other. You deal (PMd6 + (MIG or AGI)) PHS damage to each of them. Additionally, you might gain +1 PM.
 - **Parry**
     - **Action Type:** Reaction
     - **Power Point Cost:** 4*
@@ -501,7 +514,7 @@ You wield a blade such as a sword, dagger, or axe. The primary attributes for th
     - **Action Type:** Quick Action
     - **Power Point Cost:** 4*
     - **Requirements:** PL4
-    - **Description:** You quickly slash an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage.
+    - **Description:** You quickly slash an adjacent enemy, dealing (PMd6 + (MIG or AGI)) PHS damage. Additionally, you might gain +1 PM.
 - **Twist Blade**
     - **Action Type:** Quick Action
     - **Power Point Cost:** 4
@@ -521,7 +534,7 @@ You wield a blade such as a sword, dagger, or axe. The primary attributes for th
     - **Action Type:** Action
     - **Power Point Cost:** 6*
     - **Requirements:** PL6
-    - **Description:** You begin to spin in circles with your blade out, dealing (PMd6 + (MIG or AGI)) PHS damage to all adjacent characters. You become slowed, but you may move and each character that you become adjacent to for first time while using this power also takes damage.
+    - **Description:** You begin to spin in circles with your blade out, dealing (PMd6 + (MIG or AGI)) PHS damage to all adjacent characters. You become slowed, but you may move and each character that you become adjacent to for first time while using this power also takes damage. Additionally, you might gain +1 PM.
 - **Deft Parry**
     - **Action Type:** Reaction
     - **Power Point Cost:** 4*
@@ -534,7 +547,7 @@ Electricity leaps and sparks at your command. The primary attribute for this set
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You shoot a bolt of electricity at an enemy within 5U, dealing (PMd4 + WIL) ENR damage. Additionally, you might reduce their current END by half of the damage dealt.
+    - **Description:** You shoot a bolt of electricity at an enemy within 5u, dealing (PMd4 + WIL) ENR damage. Additionally, you might reduce their current END by half of the damage dealt.
 - **Shock**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
@@ -584,7 +597,7 @@ Electricity leaps and sparks at your command. The primary attribute for this set
     - **Action Type:** Action
     - **Power Point Cost:** 6*
     - **Requirements:** PL6
-    - **Description:** You discharge a burst of electricity, dealing (PMd6 + WIL) ENR damage to all characters within 3u of you. Additionally, you might reduce their current END by half of the damage dealt.
+    - **Description:** You discharge a burst of electricity, dealing (PMd6 + WIL) ENR damage to all other characters within 3u of you. Additionally, you might reduce their current END by half of the damage dealt.
 - **Electric Fence**
     - **Action Type:** Action (Active)
     - **Power Point Cost:** 6
@@ -602,7 +615,7 @@ You can control the essence of fire. The primary attribute for this set is Will.
     - **Action Type:** Action
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** You throw a bolt of fire at an enemy within 10U, dealing (PMd4 + WIL) ENR damage. Additionally, you might cause them to burn.
+    - **Description:** You throw a bolt of fire at an enemy within 10u, dealing (PMd4 + WIL) ENR damage. Additionally, you might cause them to burn.
 - **Ignite**
     - **Action Type:** Action
     - **Power Point Cost:** 2
@@ -612,72 +625,47 @@ You can control the essence of fire. The primary attribute for this set is Will.
     - **Action Type:** Action
     - **Power Point Cost:** 2
     - **Requirements:** PL2
-    - **Description:** You create a smoldering fire centered on yourself or a point you can see within 10U. Smoke spreads from the fire in a 3U-radius sphere. When a non-adjacent character is targetted within or through the smoke, that attack is suffers a penalty die unless the attacker has Super Sense. The smoke remains for 5 rounds.
+    - **Description:** You create a smoldering fire centered on yourself or a point you can see within 10u. Smoke spreads from the fire in a 3u-radius sphere. When a non-adjacent character is targeted within or through the smoke, that attack is suffers a penalty die unless the attacker has Super Sense. The smoke remains for 5 rounds.
 - **Flame Wave**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** 2*
     - **Requirements:** PL3
-    - **Description:** ...
+    - **Description:** You send out a wave of fire in a 3u cone, dealing (PMd4 + WIL) ENR to each enemy within. Additionally, you might cause them to burn.
 - **Warmth**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** -
     - **Requirements:** PL3
-    - **Description:** ...
+    - **Description:** A fire burns within you, providing you +2 resistance to ENR damage.
 - **Cauterize**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** 4*
     - **Requirements:** PL4
-    - **Description:** ...
+    - **Description:** You temper your flames so that you are able to cauterize wounds, restoring (PMd8 + WIL) hit points to yourself or an adjacent ally.
 - **Immolate**
-    - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 4
     - **Requirements:** PL4
-    - **Description:** ...
+    - **Description:** You ignite yourself causing you to burn. At the end of every turn, you deal (PMd6 + WIL) ENR damage to all adjacent characters. Additionally, you might cause them to burn. This power ends if you are stunned, or stop burning.
 - **Stoke**
-    - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 4
     - **Requirements:** PL5
-    - **Description:** ...
+    - **Description:** You fan the flames, causing all burning characters to immediately take burn damage.
 - **Combust**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** 6*
     - **Requirements:** PL5
-    - **Description:** ...
+    - **Description:** You explode in a burst of fire, dealing (PMd8 + WIL) ENR damage to all characters within 4u of you, including yourself. Additionally, you might cause them to burn.
 - **Fireball**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** 6*
     - **Requirements:** PL6
-    - **Description:** ...
+    - **Description:** You hurl a ball of fire at an enemy or surface you can see within 10u. The ball bursts on impact, dealing (PMd6 + WIL) ENR damage to all characters within a 4u-radius circle. Additionally, you might cause them to burn.
 - **Flashfire**
     - **Action Type:** Action
-    - **Power Point Cost:** ...
+    - **Power Point Cost:** 6*
     - **Requirements:** PL6
-    - **Description:** ...
-
---- Old Power Sets ---
-
-### Fire Control
-You can control the essence of fire. The primary attribute for this set is Will.
-- **Flare**
-    - **Action Type:** Action
-    - **Power Point Cost:** 2*
-    - **Requirements:** None
-    - **Description:** You throw a bolt of fire at an enemy within 10U, dealing (PMd6 + WIL) ENR damage.
-- **Scorch**
-    - **Action Type:** Action
-    - **Power Point Cost:** 2*
-    - **Requirements:** None
-    - **Description:** You wreathe yourself in fire and strike an enemy, dealing (PMd8 + WIL) ENR damage.
-- **Smolder**
-    - **Action Type:** Action
-    - **Power Point Cost:** 2
-    - **Requirements:** PL2
-    - **Description:** You create a smoldering fire centered on yourself or a point you can see within 10U. Smoke spreads from the fire in a 3U-radius sphere. When a non-adjacent character is attacked within or through the smoke, that attack is made with disadvantage unless the attacker has Super Sense. The smoke remains for 5 rounds.
-- **Flame Wave**
-    - **Action Type:** Action
-    - **Power Point Cost:** 4*
-    - **Requirements:** PL3
-    - **Description:** You send out a wave of fire in a 3U cone, dealing (PMd6 + WIL) ENR to each enemy within, and cause them to burn, unless resisted.
+    - **Description:** You send out a wave of brightly burning flames in a 4u cone, dealing (PMd6 + WIL) ENR damage to each enemy within. Additionally, you might blind them until the end of their turn.
 
 ### Force Control
 You have the ability to manipulate energy to create physical forces. The primary attribute for this set is Will.
@@ -685,45 +673,194 @@ You have the ability to manipulate energy to create physical forces. The primary
     - **Action Type:** Reaction
     - **Power Point Cost:** 2*
     - **Requirements:** None
-    - **Description:** When you or a character you can see within 10U are resisting, you can summon a force field to give +(PM2) to an attribute.
+    - **Description:** When you are targeted by a power that deals PHS or ENR damage, you create a personal force field to gain +(PM) resistance.
+- **Force Push**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2
+    - **Requirements:** None
+    - **Description:** You create a force to push an adjacent enemy away, dealing (1d4 + WIL) PHS damage and knocking them back 2 units, unless resisted. Additionally, you might knock them down.
+- **Protection Field**
+    - **Action Type:** Reaction
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL2
+    - **Description:** When another character you can see within 10u is targeted by a power that deals PHS or ENR damage, you create a protective force field to give them +(PM) resistance.
 - **Force Bolt**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
-    - **Requirements:** None
-    - **Description:** You send a bolt of force at an enemy within 10U, dealing (PMd6 + WIL) PHS damage and knock them back 2U, unless resisted.
+    - **Requirements:** PL2
+    - **Description:** You send a bolt of force at an enemy within 10u, dealing (PMd4 + WIL) PHS damage and knocking them back 2u, unless resisted. Additionally, you might knock them down.
 - **Force Wall**
     - **Action Type:** Action (Active)
     - **Power Point Cost:** 2*
-    - **Requirements:** 2*
-    - **Description:** You create a wall of force in an empty space within 10U. This is repeated (PM) time(s). All created force walls must be adjacent. The force walls use your WIL for resisting, and are dissapated upon taking any damage.
-- **Force Cage**
+    - **Requirements:** PL3
+    - **Description:** You create a wall of force in an empty space within 10u. This is repeated (PM) time(s). All created force walls must be adjacent. The force walls use your WIL for resisting, and are dissipated upon taking any damage. This power ends if you use it again or if you are stunned.
+- **Force Cone**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** You create a 3u cone shaped force that deals (PMd4 + WIL) PHS damage to all characters within, and knocks them back 2u, unless resisted. Additionally, you might knock them down.
+- **Force Bubble**
     - **Action Type:** Action (Active)
     - **Power Point Cost:** 4
-    - **Requirements:** PL3
-    - **Description:** You create a force field around an enemy. They cannot move or target characters outside the force field, nor be targeted themselves. The force field uses your WIL to resist and dissapates upon taking any damage.
+    - **Requirements:** PL4
+    - **Description:** You create a tangible bubble of force around yourself. You are immobilized, and cannot target or be targeted through the bubble except by mental powers. The bubble uses your WIL for resisting, and is dissipated upon taking any damage or if you are stunned.
+- **Repulsion Blast**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You send a blast an enemy within 10u with repelling force that deals (PMd6 + WIL) PHS damage and knocks them back 4u, unless resisted. Additionally, you might knock them down.
+- **Detention Bubble**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 6
+    - **Requirements:** PL5
+    - **Description:** You create a tangible bubble of force around an adjacent character. They are immobilized, and cannot target or be targeted through the bubble except by mental powers, but they can target the bubble. The bubble uses your WIL for resisting, and is dissipated upon taking any damage or if you are stunned.
+- **...**
+    - **Action Type:** ...
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **Psionic Dispersion**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** PL6
+    - **Description:** Your Force Control powers also block mental powers.
+- **Repulsion Bomb**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You create an explosion of force centered on an enemy or surface you can see within 10u. All characters within a 3u-radius circle are dealt (PMd6 + AGI) PHS damage and are knocked back 4u, unless resisted. Additionally, you might knock them down.
 
 ### Gadgetry
 You have equipment that you have constructed or acquired to gain tactical advantages. The primary attribute for this set is Intellect.
 - **Grappling Hook**
-    - **Action Type:** Reaction
+    - **Action Type:** Quick Action
     - **Power Point Cost:** 1
     - **Requirements:** None
-    - **Description:** You have a launchable grappling hook that can extend up to 5U. You can use it lift yourself, cross gaps, bring yourself closer to horizontal surfaces and enemies. You can also use it to bring objects or allies to you. You may use it while falling.
-- **Bolas**
+    - **Description:** You have a launchable grappling hook that can extend up to 5u. You can use it lift yourself, cross gaps, bring yourself closer to horizontal surfaces and enemies. You can also use it to bring objects or allies to you. You may use it as a reaction while falling.
+- **Locksmith Kit**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 0
+    - **Requirements:** None
+    - **Description:** You lock or unlock an adjacent door, container or other appropriate object.
+- **Boomerang**
     - **Action Type:** Action
-    - **Power Point Cost:** 1
-    - **Requirements:** None
-    - **Description:** You tie up an enemy within 5U, knocking them down, unless resisted with AGI. They may not move until freed. The bolas use your INT for resisting, and are destroyed upon taking any damage.
-- **Stim Dart**
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL2
+    - **Description:** You throw a boomerang at an enemy within 10u, dealing (PMd4 + INT).
+- **Glider**
     - **Action Type:** Quick Action
     - **Power Point Cost:** 2
     - **Requirements:** PL2
-    - **Description:** You shoot a stimulant dart at a character up to 5U away, healing them of (1d8 + INT) damage.
-- **Taser Dart**
+    - **Description:** You equip and/or activate your glider allowing you to fall without taking damage for the rest of your turn. You can also move 1 unit for every unit you fall.    
+    If you end the fall adjacent to an enemy, you can perform a glide kick on them, dealing (1d4 + INT). Additionally, you might knock them down.
+- **Smoke bomb**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2
+    - **Requirements:** PL3
+    - **Description:** You throw a smoke bomb at a point you can see within 10u. Smoke spreads from the device in a 3u-radius sphere. When a non-adjacent character is targeted within or through the smoke, that attack is suffers a penalty die unless the attacker has Super Sense. The smoke remains for 5 rounds.
+- **Bolas**
     - **Action Type:** Action
     - **Power Point Cost:** 4
     - **Requirements:** PL3
-    - **Description:** You shoot a taser dart at an enemy up to 5U away, dealing (1d4 + INT) ENR damage, and stunning them until the end of their turn, unless resisted.
+    - **Description:** You throw bolas at an enemy within 5u, knocking them down and immobilizing them, unless resisted with MIG or AGI. They stay immobilized until the bolas are destroyed. The bolas use your INT for resisting, and are destroyed upon taking any damage.
+- **Flash Bomb**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** You throw a flash bomb at a point you can see within 10u. The bomb blinds all characters in a 2u-radius sphere until the end of their turn, unless resisted with AGI or END.
+- **Stim Dart**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** You shoot a stim syrette at an ally within 5u, restoring (1d8 + WIL) hit points.
+- **Cloaking Device**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 6
+    - **Requirements:** PL5
+    - **Description:** You activate a device granting you invisibility until you use another power, take damage, or are stunned. Other characters are Blind when targeting you, or being targeted by you.
+- **Taser Dart**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6
+    - **Requirements:** PL5
+    - **Description:** You shoot a charged dart at an enemy within 5u, dealing (1d6 + INT) ENR damage. Additionally, you might stun them until the end of their turn.
+- **EMP Blaster**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6
+    - **Requirements:** PL6
+    - **Description:** You shoot an electromagnetic pulse at an enemy or object within 10u, disabling devices and stunning Technology characters until the end of your next turn, unless resisted with INT or WIL.
+- **Force Field Generator**
+    - **Action Type:** Reaction
+    - **Power Point Cost:** 6
+    - **Requirements:** PL6
+    - **Description:** When you are targeted by a power that deals PHS or ENR damage, you activate a personal force field generator to gain +2 resistance.
+
+### Ice Control
+...
+
+### Light Control
+You can bend light to conceal people and objects. The primary attribute for this set is Will.
+- **Cloak**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 2
+    - **Requirements:** None
+    - **Description:** You bend light around yourself to blend into your surroundings until you use another power, take damage, or are stunned. You are less likely to be detected by characters that cannot sense you.
+- **Light**
+    - **Action Type:** Quick Action (Active)
+    - **Power Point Cost:** 1*
+    - **Requirements:** None
+    - **Description:** You begin shining a light that covers a (5 + PM) unit radius sphere. This ends if you are stunned.
+- **Conceal**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 2
+    - **Requirements:** PL2
+    - **Description:** You bend light around an object within 10u, concealing it. This ends if you are stunned.
+- **Flash**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL2
+    - **Description:** You create a flash of light towards an enemy within 5u, blinding them until the end of their turn, unless resisted with AGI or END. You get a bonus to your PR equal to your PM.
+- **Invisibility**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 4
+    - **Requirements:** PL3
+    - **Description:** You bend light around yourself to become invisible until you use another power, take damage, or are stunned. Other characters are Blind when targeting you, or being targeted by you.
+- **Illuminate**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 4
+    - **Requirements:** PL3
+    - **Description:** You cause an enemy or object within 10u to glow, allowing to you sense them even if they are obscured or invisible. This ends if you are stunned or if the target moves 10u away.
+- **Grant Invisibility**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** You bend light around another character, granting them invisibility until they use another power, take damage, or are stunned. This also ends if you are stunned, or if they move 10u away. Other characters are Blind when targeting them, or being targeted by them.
+- **Gleam**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4
+    - **Requirements:** PL4
+    - **Description:** You create a wide, bright flash that blinds all characters in a 5u cone, unless resisted with AGI or END. You get a bonus to your PR equal to your PM.
+- **...**
+    - **Action Type:** ...
+    - **Power Point Cost:** ...
+    - **Requirements:** PL5
+    - **Description:** ...
+- **Specter**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL5
+    - **Description:** You create a terrifying illusion for an enemy within 5u. Unless resisted with AGI or INT, the target must attempt to lose sight of you next turn. You get a bonus to your PR equal to your PM.
+- **Superior Invisibility**
+    - **Action Type:** Action (Active)
+    - **Power Point Cost:** 6
+    - **Requirements:** PL6
+    - **Description:** You become invisible and are able to remain so until take damage, or are stunned. Other characters are Blind when targeting you, or being targeted by you.
+- **Eidolon**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You create an illusion that deceives an enemy within 5u, forcing them to attack their nearest ally on their next turn, unless resisted with AGI or INT. You get a bonus to your PR equal to your PM.
+
+--- Old Power Sets ---
 
 ### Invisibility
 You can bend light to conceal people and objects.
