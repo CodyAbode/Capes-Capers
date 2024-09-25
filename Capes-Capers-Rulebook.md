@@ -794,9 +794,6 @@ You have equipment that you have constructed or acquired to gain tactical advant
     - **Requirements:** PL6
     - **Description:** When you are targeted by a power that deals PHS or ENR damage, you activate a personal force field generator to gain +2 resistance.
 
-### Ice Control
-...
-
 ### Light Control
 You can bend light to conceal people and objects. The primary attribute for this set is Will.
 - **Cloak**
@@ -860,48 +857,70 @@ You can bend light to conceal people and objects. The primary attribute for this
     - **Requirements:** PL6
     - **Description:** You create an illusion that deceives an enemy within 5u, forcing them to attack their nearest ally on their next turn, unless resisted with AGI or INT. You get a bonus to your PR equal to your PM.
 
---- Old Power Sets ---
-
-### Invisibility
-You can bend light to conceal people and objects.
-- **Cloak**
-    - **Action Type:** Quick Action (Active)
-    - **Power Point Cost:** 2
-    - **Requirements:** None
-    - **Description:** You bend light around yourself to become Invisible. Attacks are made against you with disadvantage. You lose this power if you use a power from any other Power Set, or take any damage.
-- **Conceal**
-    - **Action Type:** Quick Action (Active)
-    - **Power Point Cost:** 2
-    - **Requirements:** None
-    - **Description:** You make an object invisible. If it is damaged or moved by any other character, this power ends.
-- **Grant Invisibility**
-    - **Action Type:** Quick Action (Active)
-    - **Power Point Cost:** 4
-    - **Requirements:** PL3
-    - **Description:** You grant the effects of Invisibility to another character.
-
 ### Mind Control
 You can read, manipulate, and influence other minds. The primary attribute for this set is Intellect.
-- **Mind Read**
+- **Mind Sense**
     - **Action Type:** Quick Action
     - **Power Point Cost:** 1
     - **Requirements:** None
-    - **Description:** You learn the next action a enemy within 10U is planning, unless resisted with INT.
-- **Psionic Dart**
+    - **Description:** You sense all thinking characters within 5u. This works even through obstructions such as walls, and prevents you from suffering a Penalty Die when targeting a character you would not normally sense.
+- **Clarity**
+    - **Action Type:** Passive
+    - **Power Point Cost:** -
+    - **Requirements:** None
+    - **Description:** You are able to steel your mind, providing you +2 INT and WIL resistance.
+- **Mind Read**
+    - **Action Type:** Quick Action
+    - **Power Point Cost:** 2
+    - **Requirements:** PL2
+    - **Description:** You read the mind of a character within 10u, learning what that character currently intends to do on their next turn, unless resisted with INT.
+- **Psionic Sliver**
     - **Action Type:** Action
     - **Power Point Cost:** 2*
-    - **Requirements:** None
-    - **Description:** You send a dart of psionic force at an enemy within 10U, dealing (PMd6 + INT) MNT damage.
-- **Placate**
-    - **Action Type:** Reaction
-    - **Power Point Cost:** 4
     - **Requirements:** PL2
-    - **Description:** You stop an action a enemy within 10U is making, unless resisted with INT or WIL.
-- **Manipulate Target**
+    - **Description:** You attack the mind of an enemy within 10u, dealing (PMd4 + INT) MNT damage. Additionally, you might cause them to suffer a penalty die on their next PR during their turn.
+- **Soothe**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL3
+    - **Description:** You soothe the mind of yourself or an ally within 10u, restoring (PMd6 + INT) hit points.
+- **Telekinesis**
+    - **Action Type:** Action
+    - **Power Point Cost:** 2*
+    - **Requirements:** PL3
+    - **Description:** You use your mind to retrieve, move, or throw an object within 10u to yourself, an ally or enemy within 10u. If you throw an object at an enemy, it deals (PMd4 + INT) PHS damage.
+- **Calm**
     - **Action Type:** Action
     - **Power Point Cost:** 4
-    - **Requirements:** PL3
-    - **Description:** You force an enemy within 10U to make an attack against a target of your choosing, unless resisted with INT or WIL.
+    - **Requirements:** PL4
+    - **Description:** You calm the mind of an ally within 10u, ending a stun effect, and preventing them from being stunned until the end of their next turn.
+- **Psi Slice**
+    - **Action Type:** Action
+    - **Power Point Cost:** 4*
+    - **Requirements:** PL4
+    - **Description:** You slice an adjacent enemy with a blade of psionic energy, dealing (PMd6 + INT) MNT damage. Additionally, you might cause them to suffer a penalty die on their next PR during their turn.
+- **Placate**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6
+    - **Requirements:** PL5
+    - **Description:** You mentally prevent an enemy within 10u from acting, stunning them until the end of their turn, unless resisted with INT or WIL.
+- **Telekinetic Jolt**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL5
+    - **Description:** You use your telekinesis on an enemy within 10u, dealing (PMd4 + INT) PHS damage, and knocking them back 2u, unless resisted. Additionally, you might knock them down.
+- **Manipulate**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6
+    - **Requirements:** PL6
+    - **Description:** You force an enemy within 10u to attack an ally on their next turn, unless resisted with INT or WIL.
+- **Psi Sweep**
+    - **Action Type:** Action
+    - **Power Point Cost:** 6*
+    - **Requirements:** PL6
+    - **Description:** You slice all adjacent enemies with a psionic blade, dealing (PMd6 + INT) MNT damage. Additionally, you might cause them to suffer a penalty die on their next PR during their turn.
+
+--- Old Power Sets ---
 
 ### Shield Mastery
 You have mastered the use of a shield in battle for both defense and offense. The primary attribute for this set is Might.
