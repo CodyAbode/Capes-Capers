@@ -222,7 +222,7 @@ Inherent Powers are basic powers that all characters possess.
     - **Action Type:** Action
     - **Power Point Cost:** 0
     - **Requirements:** None
-    - **Description:** Roll a number of d4 equal to half your PL. You regain that amount of PP.
+    - **Description:** You must expend a training die to use this power. Roll a number of d4 equal to half your PL. You regain that amount of PP.
 - **Grapple**
     - **Action Type:** Action
     - **Power Point Cost:** 0
@@ -990,6 +990,53 @@ You possess phenomenal strength and are able exert great physical force. The pri
     - **Power Point Cost:** 4*
     - **Requirements:** PL3
     - **Description:** You strike an enemy with an upward blow, dealing (PMd8 + MIG) PHS damage and knock them up (PM)U, unless resisted.
+
+# Equipment
+- **Pistol**
+    - **Item Type:** Weapon, Firearm
+    - **Requirements:** None
+    - **Description:** You may use your Strike power against a non-adjacent enemy within 10u.
+    - **Inf Cost:** 1
+- **Bow**
+    - **Item Type:** Weapon, Firearm
+    - **Requirements:** None
+    - **Description:** You may use your Strike power against a non-adjacent enemy within 10u.
+    - **Inf Cost:** 1
+- **Stim Syrette**
+    - **Item Type:** Consumable
+    - **Requirements:** None
+    - **Description:** On your turn during initiative, as a Quick Action, you can inject yourself or an adjacent ally with this syrette, restoring (1d8 + 2) Hit Points. This item is expended during use.
+    - **Inf Cost:** 1
+- **Adreno Syrette**
+    - **Item Type:** Consumable
+    - **Requirements:** None
+    - **Description:** On your turn during initiative, as a Quick Action, you can inject yourself or an adjacent ally with this syrette, restoring (1d6 + 2) Power Points. This item is expended during use.
+    - **Inf Cost:** 1
+- **Ankh of Zaeus**
+    - **Item Type:** Gear
+    - **Requirements:** None
+    - **Description:** You gain +2 to Will, but suffer -1 to Intellect. Mythic characters to not suffer this penalty.
+    - **Inf Cost:** 2
+- **Oxygenator**
+    - **Item Type:** Gear
+    - **Requirements:** None
+    - **Description:** You gain +2 to Endurance, but suffer -1 to Might. Natural characters to not suffer this penalty.
+    - **Inf Cost:** 2
+- **Quick Serum**
+    - **Item Type:** Gear
+    - **Requirements:** None
+    - **Description:** You gain +2 to Agility, but suffer -1 to Endurance. Mutation characters to not suffer this penalty.
+    - **Inf Cost:** 2
+- **Power Harness**
+    - **Item Type:** Gear
+    - **Requirements:** None
+    - **Description:** You gain +2 to Might, but suffer -1 to Agility. Technology characters to not suffer this penalty.
+    - **Inf Cost:** 2
+- **Sage Stone**
+    - **Item Type:** Gear
+    - **Requirements:** None
+    - **Description:** You gain +2 to Intellect, but suffer -1 to Will. Magic characters to not suffer this penalty.
+    - **Inf Cost:** 2
 
 # Unorganized Notes
 - Always round up, unless otherwise stated.
